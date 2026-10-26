@@ -1,0 +1,12 @@
+{
+  "name": "AXIOS PayProof",
+  "requiredEnv": [
+    "DATABASE_URL",
+    "SESSION_SECRET",
+    "OPERATOR_ACCESS_CODE",
+    "PAYPAL_CLIENT_ID",
+    "PAYPAL_CLIENT_SECRET",
+    "PAYPAL_WEBHOOK_ID",
+    "APP_ORIGIN"
+  ]
+}
