@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 import { withEve } from "eve/next";
 const config: NextConfig = {
+  serverExternalPackages: ["@qloo/qloo-harness"],
   poweredByHeader: false,
   async headers() {
     return [

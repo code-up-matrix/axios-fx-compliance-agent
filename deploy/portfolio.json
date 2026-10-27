@@ -1,0 +1,97 @@
+{
+  "sourceRepository": "code-up-matrix/axios-fx-compliance-agent",
+  "sourceBranch": "devpost/portfolio-2026",
+  "vercelTeamId": "team_64IDAvx3sgtTRCQpQavfF3cG",
+  "products": [
+    {
+      "product": "FieldBrief",
+      "proposedRepository": "code-up-matrix/fieldbrief-devpost-2026",
+      "repositoryCreated": false,
+      "landingPath": "/lab/fieldbrief",
+      "event": "https://nebiusglobalaihackathon.devpost.com/",
+      "status": "Implemented; deployment blocked",
+      "deploymentId": null,
+      "deploymentUrl": null
+    },
+    {
+      "product": "AXIOS PayProof",
+      "proposedRepository": "code-up-matrix/axios-fx-compliance-agent",
+      "repositoryCreated": true,
+      "landingPath": "/checkout",
+      "event": "https://paypalaihackathon.devpost.com/",
+      "status": "Implemented; deployment blocked",
+      "deploymentId": null,
+      "deploymentUrl": null
+    },
+    {
+      "product": "CultureRoute",
+      "proposedRepository": "code-up-matrix/cultureroute-devpost-2026",
+      "repositoryCreated": false,
+      "landingPath": "/lab/cultureroute",
+      "event": "https://qloo.devpost.com/",
+      "status": "Implemented; deployment blocked",
+      "deploymentId": null,
+      "deploymentUrl": null
+    },
+    {
+      "product": "CrowdQuest",
+      "proposedRepository": "code-up-matrix/crowdquest-devpost-2026",
+      "repositoryCreated": false,
+      "landingPath": "/lab/crowdquest",
+      "event": "https://twitchcon-codex.devpost.com/",
+      "status": "Implemented; deployment blocked",
+      "deploymentId": null,
+      "deploymentUrl": null
+    },
+    {
+      "product": "FitReceipt",
+      "proposedRepository": "code-up-matrix/fitreceipt-devpost-2026",
+      "repositoryCreated": false,
+      "landingPath": "/lab/fitreceipt",
+      "event": "https://youcam-api-skin-ai-ecommerce.devpost.com/",
+      "status": "Implemented; deployment blocked",
+      "deploymentId": null,
+      "deploymentUrl": null
+    },
+    {
+      "product": "HandoverShelf",
+      "proposedRepository": "code-up-matrix/handovershelf-devpost-2026",
+      "repositoryCreated": false,
+      "landingPath": null,
+      "event": "https://ugreenhackathon.devpost.com/",
+      "status": "Native package prepared",
+      "deploymentId": null,
+      "deploymentUrl": null
+    },
+    {
+      "product": "ReLoop",
+      "proposedRepository": "code-up-matrix/reloop-devpost-2026",
+      "repositoryCreated": false,
+      "landingPath": "/lab/reloop",
+      "event": "https://arbiter-hacks-v1.devpost.com/",
+      "status": "Implemented; eligibility hold",
+      "deploymentId": null,
+      "deploymentUrl": null
+    },
+    {
+      "product": "LessonScript",
+      "proposedRepository": "code-up-matrix/lessonscript-devpost-2026",
+      "repositoryCreated": false,
+      "landingPath": "/lab/lessonscript",
+      "event": "https://syntax-summit.devpost.com/",
+      "status": "Implemented; eligibility hold",
+      "deploymentId": null,
+      "deploymentUrl": null
+    },
+    {
+      "product": "RhythmWeave",
+      "proposedRepository": "code-up-matrix/rhythmweave-devpost-2026",
+      "repositoryCreated": false,
+      "landingPath": "/lab/rhythmweave",
+      "event": "https://innovart2027.devpost.com/",
+      "status": "Implemented; eligibility hold",
+      "deploymentId": null,
+      "deploymentUrl": null
+    }
+  ]
+}

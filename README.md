@@ -1,3 +1,8 @@
+> **Devpost portfolio branch — 27 October 2026**
+> Start at `/lab` for seven new product modules, `/lab/catalog` for the event/idea matrix and `/lab/history` for saved work. Source is prepared; live deployment and sponsor verification are pending.
+>
+> Read [the Devpost catalog](docs/DEVPOST-CATALOG.md), [deployment and blockers](docs/DEVPOST-DEPLOYMENT.md), [demo plans](docs/DEVPOST-DEMO-PLANS.md), and [verification](docs/DEVPOST-VERIFICATION.md). [HandoverShelf](native/handovershelf/README.md) includes the UGREEN native package and proposal. This branch also retains the existing PayProof application below.
+
 # AXIOS PayProof
 
 An AI purchase planner that keeps exact prices, explicit human approval and PayPal verification in the same workflow.

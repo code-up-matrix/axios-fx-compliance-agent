@@ -1,0 +1,26 @@
+{
+  "checkFormatVersion": "2.0.0",
+  "status": "static-pass",
+  "target": {
+    "skillName": "handover-shelf"
+  },
+  "catalog": {
+    "checkedVersion": "2.0.0"
+  },
+  "files": [
+    {
+      "path": "references/acceptance.md",
+      "sha256": "6498c79cec10d87bf15fe185ab25322985f2d99b6f5b16185290f6ebd644485c"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "a03c78ac34fd74d3e415974e97ecae86424daa8b99fce21a1f85d8da96cf9849"
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "info": 0
+  },
+  "diagnostics": []
+}

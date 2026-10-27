@@ -1,0 +1,31 @@
+# Verification record — 27 October 2026
+
+`npm run check` passed: TypeScript, **33 tests in five files**, Eve production build and Next.js production build. Next generated 37 pages/routes in its static generation pass. The official Qloo package is imported by its documented exec entry point; its real workflow help command runs in the packaging test without an API key. Eve's build completed at approximately 20 MB after including the harness.
+
+## What was exercised
+
+- FieldBrief citation-ID validation, duplicate-ID rejection, exact Nebius request/model selection and failure when the configured NVIDIA model is absent. Provider replies in these tests are stubs.
+- Twitch HMAC verification against the raw body, tampering, stale/invalid timestamps and strict vote commands.
+- Actual PostgreSQL semantics using PGlite: atomic ReLoop quantity reservations under contention; donor-only and one-time confirmation; rejected cross-origin mutation; Twitch challenge, delivery deduplication, first-vote deduplication and hidden answers until closure.
+- Record ownership, inability to delete another workspace's record, expiry filtering, authenticated cleanup and preservation of unexpired records against the same PostgreSQL engine.
+- YouCam upload ownership tokens, allowed provider hosts, no API credential in the browser response and the cloth-v4 request schema. Provider calls in these tests are stubs.
+- LessonScript exact rational arithmetic, precedence, unary minus, division by zero, source-line errors, rejection of JavaScript and execution bounds.
+- RhythmWeave pulse counts throughout the allowed range, deterministic SVG and absence of script content.
+- The previous PayProof price, approval, ownership, capture and webhook-related tests remain passing.
+
+The React review checked stable keys, effect cleanup, labeled inputs, visible errors, disabled submission while pending, no provider secrets in client components and deterministic rendering. Desktop/mobile browser interaction has not been observed on a deployed URL. Local semantic tests and compilation do not replace that check.
+
+## Native package and catalog
+
+- UGREEN official starter checker 0.7.3 / catalog 2.0.0: `static-pass`, **zero errors and zero warnings**. The unchanged result is included at `native/handovershelf/verification/static-check.json`.
+- The initial ZIP contains exactly `SKILL.md` and `references/acceptance.md`; no executables, binaries or separate manifest are inside it. ZIP size: 2,880 bytes.
+- Proposal: 346 words across the ten substantive responses, two visually inspected A4 pages, 47,120 bytes (below 1 MB). No participant signature or accepted declaration is fabricated. Editable source is `scripts/build-handover-proposal.py`; hashes are in `native/handovershelf/releases/manifest.json`.
+- Catalog: **52 distinct event plans**, required fields checked, rules sources labeled independently of directory-only observations. OpenCV expired during research, reducing the open-directory count to 51. This snapshot does not include future additions or undiscoverable private events.
+
+## Still unverified
+
+Vercel deployment, Neon provisioning/migration, live Nebius/Qloo/YouCam calls, actual Twitch OAuth/subscription/votes, real Eve agent execution, deployed ownership controls, cloud cron execution, browser behavior, backup restoration, NAS installation/runtime, required videos and final submissions.
+
+The local Eve build emitted a warning that no Docker/Vercel sandbox provider was available. Default tools are disabled and the authored integrations do not depend on that local sandbox; nevertheless, a completed build is not runtime proof. No fake runtime success was used to clear a gate.
+
+Vercel still returned 403 for the intended team when rechecked after implementation. New GitHub repositories cannot be created by the current connector; the authenticated browser creation flow is also not yet available. The source is prepared on the isolated portfolio branch pending these access steps.

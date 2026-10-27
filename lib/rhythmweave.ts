@@ -1,0 +1,9 @@
+import {z} from "zod";
+export const WeaveInput=z.object({steps:z.number().int().min(8).max(48),pulses:z.number().int().min(1).max(48),rings:z.number().int().min(2).max(12),rotation:z.number().int().min(0).max(47),palette:z.enum(["moss","coral","indigo"])}).refine(v=>v.pulses<=v.steps,"Pulses cannot exceed steps.");
+export function rhythm(steps:number,pulses:number,rotation:number){return Array.from({length:steps},(_,i)=>((i+rotation)%steps*pulses)%steps<pulses);}
+export function weave(value:z.infer<typeof WeaveInput>){const input=WeaveInput.parse(value);const colors={moss:["#153d36","#dafa71","#f5f5ed"],coral:["#5b2a30","#ff846b","#fff0d8"],indigo:["#272354","#b9b0fc","#efedff"]}[input.palette];let shapes="";
+  for(let row=0;row<input.rings;row++){const beat=rhythm(input.steps,input.pulses,(input.rotation+row*2)%input.steps);const radius=50+row*230/(input.rings-1);for(let i=0;i<input.steps;i++){const angle=(i/input.steps)*Math.PI*2-Math.PI/2;const x=320+Math.cos(angle)*radius,y=320+Math.sin(angle)*radius;const size=Math.min(18,Math.PI*radius/input.steps*.75);shapes+=`<circle cx="${x.toFixed(3)}" cy="${y.toFixed(3)}" r="${(beat[i]?size:size*.35).toFixed(3)}" fill="${beat[i]?colors[1]:colors[2]}" opacity="${beat[i]?1:.26}"/>`;}}
+  const description=`${input.pulses} pulses distributed over ${input.steps} steps in ${input.rings} rings, rotated by ${input.rotation} steps. Palette: ${input.palette}.`;
+  const svg=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title description"><title id="title">RhythmWeave</title><desc id="description">${description}</desc><rect width="640" height="640" rx="28" fill="${colors[0]}"/>${shapes}<circle cx="320" cy="320" r="10" fill="${colors[1]}"/></svg>`;
+  return {svg,description,recipe:input,algorithm:"modular-euclidean-v1",beats:rhythm(input.steps,input.pulses,input.rotation)};
+}

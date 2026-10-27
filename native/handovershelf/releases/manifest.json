@@ -1,0 +1,16 @@
+{
+  "substantive_words": 346,
+  "nas_runtime_verified": false,
+  "artifacts": [
+    {
+      "path": "output/pdf/handovershelf-round1-proposal.pdf",
+      "bytes": 47120,
+      "sha256": "d6bf830a0c7419eb1e8cae4c617fb3479a049ca6e1637211a8f05a7b743ced5c"
+    },
+    {
+      "path": "native/handovershelf/releases/handover-shelf-1.0.0.zip",
+      "bytes": 2880,
+      "sha256": "c6d05789aa994bb072ade8da844b2165d34058bc355e36e10a6bf924607ca9c2"
+    }
+  ]
+}
