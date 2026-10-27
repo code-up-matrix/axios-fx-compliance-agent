@@ -1,0 +1,160 @@
+{
+  "organizationId": "org-nameless-grass-31157887",
+  "plan": "free",
+  "checkedAt": "2026-10-27T17:11:10.818Z",
+  "migrationValidation": {
+    "projectId": "delicate-shape-69241622",
+    "branchId": "br-dark-credit-b9g9dirc",
+    "statements": 11,
+    "tableCount": 8
+  },
+  "projects": {
+    "fieldbrief": {
+      "projectId": "delicate-shape-69241622",
+      "productionBranchId": "br-sparkling-grass-b9qdv5km",
+      "database": "app",
+      "runtimeRole": "app_service",
+      "migrated": true,
+      "region": "aws-eu-central-1",
+      "vercelConfigured": true,
+      "permissions": {
+        "rolname": "app_service",
+        "rolsuper": false,
+        "rolcreatedb": false,
+        "rolcreaterole": false,
+        "rolreplication": false,
+        "rolbypassrls": false,
+        "memberships": "{}",
+        "can_create_schema_objects": false,
+        "can_manage_records": true,
+        "tables": "8"
+      }
+    },
+    "cultureroute": {
+      "projectId": "floral-truth-28986401",
+      "productionBranchId": "br-green-cell-b9gdjv3f",
+      "database": "app",
+      "runtimeRole": "app_service",
+      "migrated": true,
+      "region": "aws-eu-central-1",
+      "vercelConfigured": true,
+      "permissions": {
+        "rolname": "app_service",
+        "rolsuper": false,
+        "rolcreatedb": false,
+        "rolcreaterole": false,
+        "rolreplication": false,
+        "rolbypassrls": false,
+        "memberships": "{}",
+        "can_create_schema_objects": false,
+        "can_manage_records": true,
+        "tables": "8"
+      }
+    },
+    "crowdquest": {
+      "projectId": "bitter-tree-79831403",
+      "productionBranchId": "br-raspy-cake-b9xqa1vp",
+      "database": "app",
+      "runtimeRole": "app_service",
+      "migrated": true,
+      "region": "aws-eu-central-1",
+      "vercelConfigured": true,
+      "permissions": {
+        "rolname": "app_service",
+        "rolsuper": false,
+        "rolcreatedb": false,
+        "rolcreaterole": false,
+        "rolreplication": false,
+        "rolbypassrls": false,
+        "memberships": "{}",
+        "can_create_schema_objects": false,
+        "can_manage_records": true,
+        "tables": "8"
+      }
+    },
+    "fitreceipt": {
+      "projectId": "purple-term-63678889",
+      "productionBranchId": "br-shiny-bonus-bax0ta4o",
+      "database": "app",
+      "runtimeRole": "app_service",
+      "migrated": true,
+      "region": "aws-eu-central-1",
+      "vercelConfigured": true,
+      "permissions": {
+        "rolname": "app_service",
+        "rolsuper": false,
+        "rolcreatedb": false,
+        "rolcreaterole": false,
+        "rolreplication": false,
+        "rolbypassrls": false,
+        "memberships": "{}",
+        "can_create_schema_objects": false,
+        "can_manage_records": true,
+        "tables": "8"
+      }
+    },
+    "reloop": {
+      "projectId": "hidden-sound-02574852",
+      "productionBranchId": "br-lingering-unit-b9ij7uel",
+      "database": "app",
+      "runtimeRole": "app_service",
+      "migrated": true,
+      "region": "aws-eu-central-1",
+      "vercelConfigured": true,
+      "permissions": {
+        "rolname": "app_service",
+        "rolsuper": false,
+        "rolcreatedb": false,
+        "rolcreaterole": false,
+        "rolreplication": false,
+        "rolbypassrls": false,
+        "memberships": "{}",
+        "can_create_schema_objects": false,
+        "can_manage_records": true,
+        "tables": "8"
+      }
+    },
+    "lessonscript": {
+      "projectId": "jolly-queen-59173350",
+      "productionBranchId": "br-round-darkness-b9hhgkfa",
+      "database": "app",
+      "runtimeRole": "app_service",
+      "migrated": true,
+      "region": "aws-eu-central-1",
+      "vercelConfigured": true,
+      "permissions": {
+        "rolname": "app_service",
+        "rolsuper": false,
+        "rolcreatedb": false,
+        "rolcreaterole": false,
+        "rolreplication": false,
+        "rolbypassrls": false,
+        "memberships": "{}",
+        "can_create_schema_objects": false,
+        "can_manage_records": true,
+        "tables": "8"
+      }
+    },
+    "rhythmweave": {
+      "projectId": "dawn-pine-29171712",
+      "productionBranchId": "br-orange-salad-b9ljf0fe",
+      "database": "app",
+      "runtimeRole": "app_service",
+      "migrated": true,
+      "region": "aws-eu-central-1",
+      "vercelConfigured": true,
+      "permissions": {
+        "rolname": "app_service",
+        "rolsuper": false,
+        "rolcreatedb": false,
+        "rolcreaterole": false,
+        "rolreplication": false,
+        "rolbypassrls": false,
+        "memberships": "{}",
+        "can_create_schema_objects": false,
+        "can_manage_records": true,
+        "tables": "8"
+      }
+    }
+  }
+}

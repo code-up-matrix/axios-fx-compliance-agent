@@ -1,0 +1,1223 @@
+{
+  "projects": {
+    "cultureroute": {
+      "application": "cultureroute",
+      "url": "https://cultureroute-devpost-2026.vercel.app",
+      "checkedAt": "2026-10-27T17:11:09.697681+00:00",
+      "checks": [
+        {
+          "check": "health endpoint",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "database configured",
+          "passed": true
+        },
+        {
+          "check": "anonymous history denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        },
+        {
+          "check": "foreign origin denied",
+          "passed": true,
+          "evidence": {
+            "status": 403,
+            "expected": 403
+          }
+        },
+        {
+          "check": "invalid access code denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        },
+        {
+          "check": "judge login",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "secure session cookie",
+          "passed": true
+        },
+        {
+          "check": "authenticated database read",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "new judge has isolated empty history",
+          "passed": true
+        },
+        {
+          "check": "unauthorized cleanup denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        },
+        {
+          "check": "authorized expiry cleanup",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "expired fixtures removed",
+          "passed": true,
+          "evidence": {
+            "expired_runs": "1",
+            "old_limits": "1",
+            "old_receipts": "1"
+          }
+        },
+        {
+          "check": "missing sponsor configuration fails clearly",
+          "passed": true,
+          "evidence": {
+            "status": 503,
+            "expected": 503
+          }
+        },
+        {
+          "check": "sponsor blocker accurately named",
+          "passed": true,
+          "evidence": {
+            "missing": "QLOO_API_KEY"
+          }
+        },
+        {
+          "check": "workspace logout",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "logged-out history denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        }
+      ],
+      "sponsorIntegrationVerified": false,
+      "syntheticDataOnly": true,
+      "health": {
+        "application": "CultureRoute",
+        "status": "configuration_required",
+        "missing": [
+          "QLOO_API_KEY"
+        ],
+        "version": "1.0.0"
+      },
+      "productFlowVerified": false,
+      "passed": true
+    },
+    "crowdquest": {
+      "application": "crowdquest",
+      "url": "https://crowdquest-devpost-2026.vercel.app",
+      "checkedAt": "2026-10-27T17:12:05.852909+00:00",
+      "checks": [
+        {
+          "check": "health endpoint",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "database configured",
+          "passed": true
+        },
+        {
+          "check": "anonymous history denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        },
+        {
+          "check": "foreign origin denied",
+          "passed": true,
+          "evidence": {
+            "status": 403,
+            "expected": 403
+          }
+        },
+        {
+          "check": "invalid access code denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        },
+        {
+          "check": "judge login",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "secure session cookie",
+          "passed": true
+        },
+        {
+          "check": "authenticated database read",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "new judge has isolated empty history",
+          "passed": true
+        },
+        {
+          "check": "unauthorized cleanup denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        },
+        {
+          "check": "authorized expiry cleanup",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "expired fixtures removed",
+          "passed": true,
+          "evidence": {
+            "expired_runs": "1",
+            "old_limits": "1",
+            "old_receipts": "1"
+          }
+        },
+        {
+          "check": "operator login",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "secure session cookie",
+          "passed": true
+        },
+        {
+          "check": "missing sponsor configuration fails clearly",
+          "passed": true,
+          "evidence": {
+            "status": 503,
+            "expected": 503
+          }
+        },
+        {
+          "check": "sponsor blocker accurately named",
+          "passed": true,
+          "evidence": {
+            "missing": "TWITCH_BROADCASTER_ID"
+          }
+        },
+        {
+          "check": "judge cannot create broadcaster round",
+          "passed": true,
+          "evidence": {
+            "status": 403,
+            "expected": 403
+          }
+        },
+        {
+          "check": "workspace logout",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "logged-out history denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        }
+      ],
+      "sponsorIntegrationVerified": false,
+      "syntheticDataOnly": true,
+      "health": {
+        "application": "CrowdQuest",
+        "status": "configuration_required",
+        "missing": [
+          "TWITCH_BROADCASTER_ID"
+        ],
+        "version": "1.0.0"
+      },
+      "productFlowVerified": false,
+      "passed": true
+    },
+    "fitreceipt": {
+      "application": "fitreceipt",
+      "url": "https://fitreceipt-devpost-2026.vercel.app",
+      "checkedAt": "2026-10-27T17:12:45.927781+00:00",
+      "checks": [
+        {
+          "check": "health endpoint",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "database configured",
+          "passed": true
+        },
+        {
+          "check": "anonymous history denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        },
+        {
+          "check": "foreign origin denied",
+          "passed": true,
+          "evidence": {
+            "status": 403,
+            "expected": 403
+          }
+        },
+        {
+          "check": "invalid access code denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        },
+        {
+          "check": "judge login",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "secure session cookie",
+          "passed": true
+        },
+        {
+          "check": "authenticated database read",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "new judge has isolated empty history",
+          "passed": true
+        },
+        {
+          "check": "unauthorized cleanup denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        },
+        {
+          "check": "authorized expiry cleanup",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "expired fixtures removed",
+          "passed": true,
+          "evidence": {
+            "expired_runs": "1",
+            "old_limits": "1",
+            "old_receipts": "1"
+          }
+        },
+        {
+          "check": "missing sponsor configuration fails clearly",
+          "passed": true,
+          "evidence": {
+            "status": 503,
+            "expected": 503
+          }
+        },
+        {
+          "check": "sponsor blocker accurately named",
+          "passed": true,
+          "evidence": {
+            "missing": "YOUCAM_API_KEY"
+          }
+        },
+        {
+          "check": "workspace logout",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "logged-out history denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        }
+      ],
+      "sponsorIntegrationVerified": false,
+      "syntheticDataOnly": true,
+      "health": {
+        "application": "FitReceipt",
+        "status": "configuration_required",
+        "missing": [
+          "YOUCAM_API_KEY"
+        ],
+        "version": "1.0.0"
+      },
+      "productFlowVerified": false,
+      "passed": true
+    },
+    "reloop": {
+      "application": "reloop",
+      "url": "https://reloop-devpost-2026.vercel.app",
+      "checkedAt": "2026-10-27T17:13:35.226175+00:00",
+      "checks": [
+        {
+          "check": "health endpoint",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "database configured",
+          "passed": true
+        },
+        {
+          "check": "anonymous history denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        },
+        {
+          "check": "foreign origin denied",
+          "passed": true,
+          "evidence": {
+            "status": 403,
+            "expected": 403
+          }
+        },
+        {
+          "check": "invalid access code denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        },
+        {
+          "check": "judge login",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "secure session cookie",
+          "passed": true
+        },
+        {
+          "check": "authenticated database read",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "new judge has isolated empty history",
+          "passed": true
+        },
+        {
+          "check": "unauthorized cleanup denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        },
+        {
+          "check": "authorized expiry cleanup",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "expired fixtures removed",
+          "passed": true,
+          "evidence": {
+            "expired_runs": "1",
+            "old_limits": "1",
+            "old_receipts": "1"
+          }
+        },
+        {
+          "check": "judge login",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "secure session cookie",
+          "passed": true
+        },
+        {
+          "check": "judge login",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "secure session cookie",
+          "passed": true
+        },
+        {
+          "check": "judge login",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "secure session cookie",
+          "passed": true
+        },
+        {
+          "check": "donor lists synthetic material",
+          "passed": true,
+          "evidence": {
+            "status": 201,
+            "expected": 201
+          }
+        },
+        {
+          "check": "self-claim blocked",
+          "passed": true,
+          "evidence": {
+            "status": 409,
+            "expected": 409
+          }
+        },
+        {
+          "check": "concurrent claims cannot oversell two units",
+          "passed": true,
+          "evidence": [
+            201,
+            201,
+            409
+          ]
+        },
+        {
+          "check": "claimant cannot confirm handover",
+          "passed": true,
+          "evidence": {
+            "status": 409,
+            "expected": 409
+          }
+        },
+        {
+          "check": "donor confirms handover",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "duplicate confirmation blocked",
+          "passed": true,
+          "evidence": {
+            "status": 409,
+            "expected": 409
+          }
+        },
+        {
+          "check": "donor sees persisted claims",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "donor sees exactly two claims",
+          "passed": true
+        },
+        {
+          "check": "exhausted inventory no longer offered",
+          "passed": true
+        },
+        {
+          "check": "unrelated judge claim view",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "unrelated judge cannot see claims",
+          "passed": true
+        },
+        {
+          "check": "workspace logout",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "logged-out history denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        }
+      ],
+      "sponsorIntegrationVerified": false,
+      "syntheticDataOnly": true,
+      "health": {
+        "application": "ReLoop",
+        "status": "configured_not_live_verified",
+        "missing": [],
+        "version": "1.0.0"
+      },
+      "productFlowVerified": true,
+      "testFixture": {
+        "itemId": "e18af69f-90e9-4d81-a6ab-7d68d90c2796",
+        "remaining": 0,
+        "privateJudgeWorkspace": true,
+        "synthetic": true
+      },
+      "passed": true
+    },
+    "lessonscript": {
+      "application": "lessonscript",
+      "url": "https://lessonscript-devpost-2026.vercel.app",
+      "checkedAt": "2026-10-27T17:15:30.534232+00:00",
+      "checks": [
+        {
+          "check": "health endpoint",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "database configured",
+          "passed": true
+        },
+        {
+          "check": "anonymous history denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        },
+        {
+          "check": "foreign origin denied",
+          "passed": true,
+          "evidence": {
+            "status": 403,
+            "expected": 403
+          }
+        },
+        {
+          "check": "invalid access code denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        },
+        {
+          "check": "judge login",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "secure session cookie",
+          "passed": true
+        },
+        {
+          "check": "authenticated database read",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "new judge has isolated empty history",
+          "passed": true
+        },
+        {
+          "check": "unauthorized cleanup denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        },
+        {
+          "check": "authorized expiry cleanup",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "expired fixtures removed",
+          "passed": true,
+          "evidence": {
+            "expired_runs": "1",
+            "old_limits": "1",
+            "old_receipts": "1"
+          }
+        },
+        {
+          "check": "judge login",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "secure session cookie",
+          "passed": true
+        },
+        {
+          "check": "save generated work",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "exact arithmetic preserved",
+          "passed": true,
+          "evidence": [
+            "29/24",
+            "15",
+            "-1/4"
+          ]
+        },
+        {
+          "check": "read saved work",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "saved record persists",
+          "passed": true
+        },
+        {
+          "check": "other judge history",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "cross-user record hidden",
+          "passed": true
+        },
+        {
+          "check": "cross-user deletion is harmless",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "owner record survives foreign deletion",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "foreign deletion did not remove record",
+          "passed": true
+        },
+        {
+          "check": "owner removes own test record",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "confirm own deletion",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "own test record removed",
+          "passed": true
+        },
+        {
+          "check": "workspace logout",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "logged-out history denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        }
+      ],
+      "sponsorIntegrationVerified": false,
+      "syntheticDataOnly": true,
+      "health": {
+        "application": "LessonScript",
+        "status": "configured_not_live_verified",
+        "missing": [],
+        "version": "1.0.0"
+      },
+      "productFlowVerified": true,
+      "passed": true
+    },
+    "rhythmweave": {
+      "application": "rhythmweave",
+      "url": "https://rhythmweave-devpost-2026.vercel.app",
+      "checkedAt": "2026-10-27T17:17:09.643304+00:00",
+      "checks": [
+        {
+          "check": "health endpoint",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "database configured",
+          "passed": true
+        },
+        {
+          "check": "anonymous history denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        },
+        {
+          "check": "foreign origin denied",
+          "passed": true,
+          "evidence": {
+            "status": 403,
+            "expected": 403
+          }
+        },
+        {
+          "check": "invalid access code denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        },
+        {
+          "check": "judge login",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "secure session cookie",
+          "passed": true
+        },
+        {
+          "check": "authenticated database read",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "new judge has isolated empty history",
+          "passed": true
+        },
+        {
+          "check": "unauthorized cleanup denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        },
+        {
+          "check": "authorized expiry cleanup",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "expired fixtures removed",
+          "passed": true,
+          "evidence": {
+            "expired_runs": "1",
+            "old_limits": "1",
+            "old_receipts": "1"
+          }
+        },
+        {
+          "check": "judge login",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "secure session cookie",
+          "passed": true
+        },
+        {
+          "check": "save generated work",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "generated artwork matches recipe",
+          "passed": true,
+          "evidence": {
+            "description": "9 pulses distributed over 25 steps in 8 rings, rotated by 1 steps. Palette: moss.",
+            "svgSha256": "5840970352b5e1c5192a3a11fbeebb2a56aa0908f9fe8130190e541065667ab9"
+          }
+        },
+        {
+          "check": "read saved work",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "saved record persists",
+          "passed": true
+        },
+        {
+          "check": "other judge history",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "cross-user record hidden",
+          "passed": true
+        },
+        {
+          "check": "cross-user deletion is harmless",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "owner record survives foreign deletion",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "foreign deletion did not remove record",
+          "passed": true
+        },
+        {
+          "check": "owner removes own test record",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "confirm own deletion",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "own test record removed",
+          "passed": true
+        },
+        {
+          "check": "workspace logout",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "logged-out history denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        }
+      ],
+      "sponsorIntegrationVerified": false,
+      "syntheticDataOnly": true,
+      "health": {
+        "application": "RhythmWeave",
+        "status": "configured_not_live_verified",
+        "missing": [],
+        "version": "1.0.0"
+      },
+      "productFlowVerified": true,
+      "passed": true
+    },
+    "fieldbrief": {
+      "application": "fieldbrief",
+      "url": "https://fieldbrief-devpost-2026.vercel.app",
+      "checkedAt": "2026-10-27T17:17:59.906684+00:00",
+      "checks": [
+        {
+          "check": "health endpoint",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "database configured",
+          "passed": true
+        },
+        {
+          "check": "anonymous history denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        },
+        {
+          "check": "foreign origin denied",
+          "passed": true,
+          "evidence": {
+            "status": 403,
+            "expected": 403
+          }
+        },
+        {
+          "check": "invalid access code denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        },
+        {
+          "check": "judge login",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "secure session cookie",
+          "passed": true
+        },
+        {
+          "check": "authenticated database read",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "new judge has isolated empty history",
+          "passed": true
+        },
+        {
+          "check": "unauthorized cleanup denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        },
+        {
+          "check": "authorized expiry cleanup",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "expired fixtures removed",
+          "passed": true,
+          "evidence": {
+            "expired_runs": "1",
+            "old_limits": "1",
+            "old_receipts": "1"
+          }
+        },
+        {
+          "check": "missing sponsor configuration fails clearly",
+          "passed": true,
+          "evidence": {
+            "status": 503,
+            "expected": 503
+          }
+        },
+        {
+          "check": "sponsor blocker accurately named",
+          "passed": true,
+          "evidence": {
+            "missing": "NEBIUS_API_KEY"
+          }
+        },
+        {
+          "check": "workspace logout",
+          "passed": true,
+          "evidence": {
+            "status": 200,
+            "expected": 200
+          }
+        },
+        {
+          "check": "logged-out history denied",
+          "passed": true,
+          "evidence": {
+            "status": 401,
+            "expected": 401
+          }
+        }
+      ],
+      "sponsorIntegrationVerified": false,
+      "syntheticDataOnly": true,
+      "health": {
+        "application": "FieldBrief",
+        "status": "configuration_required",
+        "missing": [
+          "NEBIUS_API_KEY",
+          "NEBIUS_NVIDIA_MODEL"
+        ],
+        "version": "1.0.0"
+      },
+      "productFlowVerified": false,
+      "passed": true
+    }
+  }
+}

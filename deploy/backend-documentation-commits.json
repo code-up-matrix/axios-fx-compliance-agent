@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-10-27T17:27:59.564Z",
+  "projects": {
+    "fieldbrief": {
+      "sha": "90fc43a60fa321ff27d4efd39058560eca0d8f36",
+      "tree": "081494a50e40848a86e9fbda692d4b5bb2a4ba07"
+    },
+    "cultureroute": {
+      "sha": "ee8f5c5d33e5a00b4e83bc30ecc4807ec8196405",
+      "tree": "3e7e1ba47a046abbc5ed8eec05b088f84187e3d7"
+    },
+    "crowdquest": {
+      "sha": "b17506bc9753ce016b976519d437da0385737170",
+      "tree": "9be3ac48c53868c09e9517c9ca491b2ef888d867"
+    },
+    "fitreceipt": {
+      "sha": "4436cfc8a1210fa0dcb0ac585ae0490c7ad07842",
+      "tree": "86c899a3d9a821111de0a8bab9d6cfe2a87503c7"
+    },
+    "reloop": {
+      "sha": "711b044b7292de8c4f231e8bd91344525025a614",
+      "tree": "f0e7ad944717f85533c3f255282e896bdcc7d012"
+    },
+    "lessonscript": {
+      "sha": "05f764fe58bab20c7178643db1fae83d0a30ee71",
+      "tree": "548898d46deb57e7f838265559b8c1eeade80dff"
+    },
+    "rhythmweave": {
+      "sha": "c385b16bd5e06cfbbd84427f312395147e1bc9f9",
+      "tree": "2355b67f7a6605b435f3d814ec8e3df2e8a6defc"
+    }
+  }
+}

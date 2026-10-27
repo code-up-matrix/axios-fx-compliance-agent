@@ -22,3 +22,7 @@ Vercel team access is authorized and all seven web projects are hosted. Each sti
 These are eight prepared projects from the [52-event research snapshot](DEVPOST-CATALOG.md). The snapshot also includes expired events and entries with eligibility, native-platform or membership constraints; it does not mean 52 completed applications or submissions.
 
 ![Eight public GitHub repositories](screenshots/devpost-repositories-2026-10-27.jpg)
+
+## Backend update
+
+Seven dedicated Neon databases are now provisioned, connected to Vercel and verified with 154 passing live assertions. See [backend verification](DEVPOST-BACKENDS.md) and [documentation commit records](../deploy/backend-documentation-commits.json). Test evidence references the exact application commit; subsequent documentation-only commits are recorded separately. Sponsor integrations and final submissions remain pending.

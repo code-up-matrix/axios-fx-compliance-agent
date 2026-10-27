@@ -25,7 +25,7 @@ The extraction generator keeps only the product's local dependency closure and r
 - RhythmWeave pulse counts throughout the allowed range, deterministic SVG and absence of script content.
 - The previous PayProof price, approval, ownership, capture and webhook-related tests remain passing.
 
-The React review checked stable keys, effect cleanup, labeled inputs, visible errors, disabled submission while pending, no provider secrets in client components and deterministic rendering. Desktop/mobile browser interaction has not been observed on a deployed URL. Local semantic tests and compilation do not replace that check.
+The React review checked stable keys, effect cleanup, labeled inputs, visible errors, disabled submission while pending, no provider secrets in client components and deterministic rendering. Selected desktop browser interactions were subsequently observed as recorded in DEVPOST-HOSTING.md. Mobile and authenticated browser submission remain unverified.
 
 ## Native package and catalog
 
@@ -36,8 +36,8 @@ The React review checked stable keys, effect cleanup, labeled inputs, visible er
 
 ## Still unverified
 
-Neon provisioning/migration, live Nebius/Qloo/YouCam calls, actual Twitch OAuth/subscription/votes, real Eve agent execution, deployed database ownership controls, cloud cron execution, backup restoration, NAS installation/runtime, required videos and final submissions. Hosting, health endpoints and selected browser interactions are verified in [DEVPOST-HOSTING.md](DEVPOST-HOSTING.md).
+Live Nebius/Qloo/YouCam calls, actual Twitch OAuth/subscription/votes, real Eve agent execution, the automatic daily cron invocation, backup restoration, NAS installation/runtime, required videos and final submissions. Neon provisioning/migrations, deployed ownership controls and authenticated cleanup are now verified with 154 passing live assertions in [DEVPOST-BACKENDS.md](DEVPOST-BACKENDS.md). Hosting, health endpoints and selected browser interactions are verified in [DEVPOST-HOSTING.md](DEVPOST-HOSTING.md).
 
 The local Eve build emitted a warning that no Docker/Vercel sandbox provider was available. Default tools are disabled and the authored integrations do not depend on that local sandbox; nevertheless, a completed build is not runtime proof. No fake runtime success was used to clear a gate.
 
-Vercel team authorization and seven deployments are complete. The existing Neon integration does not expose database creation through the current Vercel tools. The Neon plugin was offered and is not yet connected; database provisioning and required sponsor credentials remain pending.
+Vercel and Neon account connections are active. Seven dedicated databases and production deployments are verified. Required sponsor credentials and final event acceptance remain pending.

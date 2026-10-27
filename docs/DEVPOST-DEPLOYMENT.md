@@ -5,8 +5,8 @@ This isolated branch preserves the existing PayProof app and adds seven distinct
 ## Current external blockers
 
 - GitHub access is resolved: Google sign-in and GitHub two-factor authentication succeeded, and [eight separate public repositories](DEVPOST-REPOSITORIES.md) were created under `code-up-matrix`. Their published `main` commits and complete file lists were verified. The combined source remains on `devpost/portfolio-2026` in `axios-fx-compliance-agent`.
-- Vercel: team access is authorized. Seven dedicated projects are deployed and their latest builds report READY. [Live URLs and evidence](DEVPOST-HOSTING.md) distinguish hosting from unfinished backend setup.
-- No database or sponsor credential has been provisioned for these new apps. Random signing/access/cron secrets and exact production origins are configured in Vercel. Local tests use synthetic inputs, stubbed provider replies and an actual in-memory PostgreSQL engine. They do not establish live sponsor connectivity.
+- Vercel: team access is authorized. Seven dedicated projects are deployed and their latest builds report READY. [Live URLs and evidence](DEVPOST-HOSTING.md) distinguish hosting from remaining sponsor integration and event acceptance.
+- Seven dedicated Neon databases are provisioned, migrated and live-tested; see [DEVPOST-BACKENDS.md](DEVPOST-BACKENDS.md). Sponsor credentials remain pending. Random signing/access/cron secrets and exact production origins are configured in Vercel. Local tests use synthetic inputs, stubbed provider replies and an actual in-memory PostgreSQL engine. They do not establish live sponsor connectivity.
 
 ## Deployable products
 
@@ -28,9 +28,9 @@ The portfolio source tree is also exported as [eight independent repository pack
 ## Provisioning sequence
 
 1. The exact team grant and seven dedicated projects are in place. Use the project IDs in `deploy/vercel-deployments.json`. For further local setup, link the intended project. This Eve project requires `eve link --non-interactive --project <confirmed-name-or-id> --team team_64IDAvx3sgtTRCQpQavfF3cG`. Do not start a local dev server before linking and selecting its environment.
-2. Install a dedicated Neon Postgres database through Vercel Marketplace, review the selected free/paid plan and region, and attach its URL to the correct project. Avoid paid upgrades without a chosen budget.
+2. Dedicated Neon projects are now provisioned on the existing Free plan in Frankfurt. Exact IDs and restricted runtime roles are in deploy/neon-databases.json. Reuse them; create separate databases or branches for preview/development. Avoid paid upgrades without a chosen budget.
 3. Set shared secrets and the product's provider values using the platform secret store. Pull the correct environment without printing secrets. Set `APP_ORIGIN` to the exact final HTTPS origin.
-4. Run `npm ci`, `npm run check`, then `npm run db:migrate` against the selected empty project database. Migrations are additive/idempotent and never run during the build. Verify all three migration files were applied. Do not reset an existing database.
+4. Run `npm ci`, `npm run check`, then `npm run db:migrate` with a direct, non-pooled app_owner connection against the selected project database. The deployed app_service connection deliberately has no DDL privileges. Migrations are additive/idempotent and never run during the build. Verify all three migration files were applied. Do not reset an existing database.
 5. Deploy using `eve deploy --non-interactive --yes --project <confirmed-name-or-id>`. Capture the actual deployment ID, commit and URL. The official Qloo harness exec entry point is imported in-process, so Next and Eve can trace its runtime dependencies. It uses the same validated workflow as the CLI, with an allowlisted environment and no user shell commands.
 6. Verify the browser → API → provider → database → browser result on the real deployment. Use synthetic/non-sensitive data and sandbox/test environments where available. Record provider response/transaction identifiers with secrets redacted.
 7. Configure budget limits, error monitoring, backup/restore ownership, webhook delivery monitoring and the daily retention job. Confirm `/api/internal/cleanup` rejects requests without `Authorization: Bearer <CRON_SECRET>`.
@@ -48,7 +48,7 @@ Official references: https://dev.twitch.tv/docs/eventsub/eventsub-subscription-t
 
 This is controlled hackathon workspace access, not a general multi-organization identity product. Operator logins share an operator workspace; each judge login starts a new session identity. Cookies expire after eight hours, so export judge work before logging out. Before public consumer launch, add per-user account recovery, consent/terms appropriate to the service and stronger organizational identity controls.
 
-`portfolio_runs` become unreadable after 24 hours. The configured daily cron deletes expired records, meaning physical deletion can take up to another daily cycle; this has not yet been verified on Vercel. Manual deletion affects only the local record. Perfect Corp controls provider image retention. ReLoop handovers, Twitch rounds/votes and PayProof audit records are not automatically purged; define their retention before collecting real personal data. Twitch voter IDs are HMAC-hashed and chat message text is not stored. `rate_limits` are purged after 24 hours and signed Twitch receipts after two days.
+`portfolio_runs` become unreadable after 24 hours. The configured daily cron deletes expired records, meaning physical deletion can take up to another daily cycle; the deployed authenticated cleanup handler was verified with expired fixtures. The next automatic scheduled invocation has not yet been observed. Manual deletion affects only the local record. Perfect Corp controls provider image retention. ReLoop handovers, Twitch rounds/votes and PayProof audit records are not automatically purged; define their retention before collecting real personal data. Twitch voter IDs are HMAC-hashed and chat message text is not stored. `rate_limits` are purged after 24 hours and signed Twitch receipts after two days.
 
 FieldBrief validates citation identifiers, not the semantic truth of a model's claims. Human source review remains necessary. CultureRoute reports cultural affinity, not a personal or sensitive-trait prediction. FitReceipt is a visual preview, not a sizing guarantee. ReLoop reports confirmed self-declared mass, not measured emissions reduction.
 
@@ -61,4 +61,4 @@ FieldBrief validates citation identifiers, not the semantic truth of a model's c
 - Working judge access, event-specific video and remaining submission artifacts.
 - A documented service owner, budget and retention policy.
 
-Rollback by promoting the previous verified Vercel deployment. Database changes are additive. Cloud hosting is recorded in DEVPOST-HOSTING.md. No successful database/provider workflow, recording, participant registration or submission is asserted by this document.
+Rollback by promoting the previous verified Vercel deployment. Database changes are additive. Cloud hosting is recorded in DEVPOST-HOSTING.md. Successful database workflows are recorded in DEVPOST-BACKENDS.md. Sponsor success, recordings, participant registration and final submissions remain unverified.
