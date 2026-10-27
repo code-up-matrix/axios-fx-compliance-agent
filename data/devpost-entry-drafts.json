@@ -1,0 +1,86 @@
+{
+  "fieldbrief": {
+    "tagline": "Handover briefs with traceable evidence and visible unknowns.",
+    "inspiration": "Operational handovers often flatten conflicting notes into a confident summary. FieldBrief keeps the evidence identifiers and unresolved observations in view so a reviewer can inspect the basis of the handover.",
+    "whatItDoes": "Accepts labeled evidence, requests a structured brief from an available NVIDIA model through Nebius Token Factory, rejects references to unknown evidence IDs, and saves an owned record that can be exported or deleted.",
+    "howItWasBuilt": "Next.js and TypeScript provide the interface and API. Server-side input and output validation surround the Nebius request. PostgreSQL stores workspace-owned results with expiry, while signed cookies and same-origin checks protect mutations.",
+    "challenges": "A valid citation identifier does not prove the model interpreted its source correctly. The implementation rejects unsupported identifiers and preserves unknowns; semantic review remains a human responsibility.",
+    "accomplishments": "The local suite verifies provider request shape, NVIDIA model availability checks, duplicate evidence rejection, citation validation, record ownership and cleanup. Live sponsor execution is still pending.",
+    "lessons": "Evidence traceability and truth are separate properties. Both must be represented honestly in the interface and the demonstration.",
+    "next": "Connect the event credentials, run a real NVIDIA inference on Nebius, verify the deployed flow and record the result with its provider/model identifier.",
+    "judgeFit": "Demonstrates a concrete operational use of Nebius and an NVIDIA model, with a reviewable evidence workflow. Actual provider execution and judging access must be shown before submitting.",
+    "demo": ["Label the input notes as synthetic and show one contradiction.", "Run the configured NVIDIA model through Nebius.", "Inspect claims, evidence IDs and unresolved items.", "Export and reopen the saved record; demonstrate an honest error path."]
+  },
+  "cultureroute": {
+    "tagline": "An agentic cultural shortlist with Qloo evidence attached.",
+    "inspiration": "Cultural discovery is more useful when recommendations can be traced to public references rather than presented as unexplained personal predictions.",
+    "whatItDoes": "Uses public books, films and artists as starting points for a cultural shortlist. An Eve agent calls the official Qloo harness workflow, returns the actual result, asks for clarification when needed and supports owned result export.",
+    "howItWasBuilt": "The official Qloo harness exec entry point runs in-process with a restricted environment and a fixed recommend workflow. Eve exposes a typed discovery tool; Next.js presents the assistant and result view, and PostgreSQL stores owned records.",
+    "challenges": "A command-line integration must remain traceable and runnable after serverless packaging. The real harness is exercised by the packaging test, and user input is never executed as a shell command.",
+    "accomplishments": "The standalone Eve and Next.js builds pass, including a real harness help invocation and ownership tests. Actual Qloo requests and agent runtime behavior remain to be verified with event credentials.",
+    "lessons": "Cultural affinity is aggregate evidence, not a sensitive-trait inference or a guarantee about an individual. Ambiguous references need clarification.",
+    "next": "Connect the event-issued Qloo key and AI Gateway authentication, demonstrate a real agent tool call, then capture the shortlist and its returned entity identifiers.",
+    "judgeFit": "Combines the required Qloo workflow with an agent framework in a specific user task. The submission needs actual tool-call evidence and a working demo.",
+    "demo": ["Ask the assistant for a shortlist from public cultural references.", "Show a real Qloo tool invocation and returned entity IDs.", "Clarify an ambiguous match and refine the result.", "Export the record and show an honest provider error."]
+  },
+  "crowdquest": {
+    "tagline": "A Twitch audience quiz where every viewer gets one vote.",
+    "inspiration": "Shared audience games need a reliable link between a chat message and the game state. Counting retries or repeated votes would make the result misleading.",
+    "whatItDoes": "Creates timed questions, accepts the first valid !vote A–D command per viewer, displays the totals in a browser overlay and reveals the answer only after the round closes.",
+    "howItWasBuilt": "Twitch EventSub webhooks are verified against their raw body, signature and timestamp. PostgreSQL handles delivery receipts and first-vote deduplication atomically. Next.js supplies the host controls and overlay; viewer identifiers are HMAC-hashed.",
+    "challenges": "Webhook retries and simultaneous votes must not inflate totals. Challenge verification, delivery deduplication, first-vote behavior and hidden answers are tested against PostgreSQL semantics.",
+    "accomplishments": "The standalone production build and ten tests pass. Real Twitch authorization, an enabled subscription and an actual chat vote have not yet been observed.",
+    "lessons": "A simulated event establishes code behavior but cannot stand in for a real Twitch delivery. The final demonstration must show the genuine integration.",
+    "next": "Complete Twitch OAuth, enable the webhook subscription, record a real vote updating the overlay and include the genuine Codex session identifier in the event submission.",
+    "judgeFit": "A focused Twitch-native audience experience with visible Codex-assisted engineering. Requires a real Codex session ID, source and a video under three minutes.",
+    "demo": ["Show the genuine Codex session and describe the game.", "Start a round and open the overlay.", "Vote from real Twitch chat and observe the update.", "Show that a second vote does not increment the total, then reveal the answer."]
+  },
+  "fitreceipt": {
+    "tagline": "A garment try-on with consent and a reviewable task record.",
+    "inspiration": "A virtual garment preview should make image handling and the limits of the result clear to the shopper.",
+    "whatItDoes": "Collects explicit image consent, uploads permitted photos directly through signed provider URLs, creates and polls a YouCam cloth-v4 task, and saves a workspace-owned receipt that can be removed locally.",
+    "howItWasBuilt": "Next.js routes hold the YouCam credential on the server. Short-lived ownership tokens bind uploaded assets to the requesting workspace. PostgreSQL stores task records, while the browser handles the signed image transfer and preview.",
+    "challenges": "An upload URL must not become a credential leak or allow another workspace to reuse an asset. The local suite checks token ownership, permitted provider hosts and the actual cloth-v4 request shape.",
+    "accomplishments": "The standalone build and eight tests pass. No real image rendering, provider task success or live end-to-end result is claimed yet.",
+    "lessons": "Deleting a local receipt and deleting a provider-held image are different operations. A visual preview also does not establish physical fit.",
+    "next": "Use an authorized YouCam key and permitted test images to verify a complete live render, task failure handling and local deletion, then record a one-to-three-minute demonstration.",
+    "judgeFit": "Applies YouCam to a defined e-commerce decision and makes the task auditable. Actual cloth-v4 execution is mandatory evidence before entry.",
+    "demo": ["Explain the garment decision and label the permitted test photos.", "Give consent, upload and create a real YouCam task.", "Show the finished preview and its task record.", "Explain the fit limitation and remove the local receipt accurately."]
+  },
+  "reloop": {
+    "tagline": "Reserve surplus and count only confirmed handovers.",
+    "inspiration": "A surplus listing is not the same as a completed reuse. ReLoop separates offers, reservations and donor-confirmed handovers.",
+    "whatItDoes": "Lists usable materials, atomically reserves available units and lets only the donor confirm each handover once. The impact view counts confirmed, self-declared mass.",
+    "howItWasBuilt": "Next.js provides the listing and claim workflow. PostgreSQL performs bounded stock updates and confirmation checks, with signed workspaces, ownership controls and same-origin protection.",
+    "challenges": "Concurrent claims must not oversell inventory or inflate the impact ledger. The integration tests exercise contention and donor-only confirmation against PostgreSQL.",
+    "accomplishments": "Six standalone tests and the production build pass. No real-world waste reduction or emissions savings have been measured.",
+    "lessons": "An impact metric should reflect the event it actually measures. Confirmed declared mass is more defensible than treating every listing as a diversion from landfill.",
+    "next": "Resolve the event's student eligibility requirement, deploy with a dedicated database and conduct a small consented reuse trial before making outcome claims.",
+    "judgeFit": "Maps to Rethinking Waste: confirmed reuse for impact, atomic reservation for technology, a small local exchange for feasibility and a two-workspace demonstration. Student eligibility remains a submission hold.",
+    "demo": ["List a clearly labeled synthetic surplus item.", "Reserve units from a second workspace.", "Show that an excessive or competing claim cannot oversell.", "Confirm once as the donor and inspect the confirmed-mass ledger."]
+  },
+  "lessonscript": {
+    "tagline": "A small worksheet language with exact fractions.",
+    "inspiration": "Teachers need repeatable arithmetic worksheets with understandable errors and exact answers, without executing arbitrary program code.",
+    "whatItDoes": "Compiles a tiny language of titles, exercises and comments into a printable worksheet. It evaluates fractional arithmetic exactly, reports source-line errors and supports source export and owned saves.",
+    "howItWasBuilt": "A bounded TypeScript parser handles precedence, unary operators and parentheses. BigInt rational arithmetic avoids floating-point rounding. Next.js supplies the editor and print view; PostgreSQL supports saved work.",
+    "challenges": "The language must remain small and predictable while rejecting JavaScript, division by zero, excessive nesting and oversized input.",
+    "accomplishments": "Nine standalone tests and the production build pass, including exact arithmetic and source diagnostics. Classroom outcomes and deployed saving have not been measured.",
+    "lessons": "A domain-specific language earns its value through a precise grammar and useful diagnostics, not the number of general-purpose features it exposes.",
+    "next": "Resolve the conflicting student eligibility language, verify the deployed save flow and record a demonstration of the language and its implementation.",
+    "judgeFit": "Implements an actual custom language with a concrete educational use, parser and exact evaluator. Eligibility must be clarified before submission; the demo must remain within five minutes.",
+    "demo": ["Introduce the grammar with a short worksheet.", "Compile expressions with exact fractional answers.", "Show a source-line diagnostic and division-by-zero rejection.", "Print, export, save and reopen the worksheet."]
+  },
+  "rhythmweave": {
+    "tagline": "Turn rhythmic patterns into reproducible vector art.",
+    "inspiration": "A generative artwork can be both expressive and reproducible when its visual form comes from a small, explicit recipe.",
+    "whatItDoes": "Transforms pulse counts, ring settings and a palette into deterministic rhythm-based SVG artwork. Users can export the accessible vector and its recipe, then reproduce the composition.",
+    "howItWasBuilt": "TypeScript implements the bounded pattern generator and validated SVG output. Next.js provides direct manipulation controls. PostgreSQL supports owned, expiring saved recipes.",
+    "challenges": "The generator needs consistent pulse counts, deterministic output and safe exported markup across its supported parameter range.",
+    "accomplishments": "Six standalone tests and the production build pass. The tests cover supported pulse counts, reproducibility and absence of script content; audience impact has not been measured.",
+    "lessons": "A saved recipe provides a useful bridge between mathematical structure, artistic variation and reproducibility.",
+    "next": "Resolve the event eligibility conflict, verify the deployed saving flow and prepare the required presentation using original compositions.",
+    "judgeFit": "Connects mathematical rhythm and interactive visual art with an exportable artifact. The student eligibility conflict and presentation requirement remain open.",
+    "demo": ["Show the relationship between pulses, rings and visual rhythm.", "Change the palette and composition parameters.", "Export an accessible SVG and its recipe.", "Recreate the same work from the recipe and show a rejected invalid setting."]
+  }
+}

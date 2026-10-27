@@ -1,5 +1,13 @@
 # Verification record — 27 October 2026
 
+## Independent project verification
+
+The [independent repository packages](../releases/repository-seeds/README.md) have each been checked separately: FieldBrief 8 tests, CultureRoute 5, CrowdQuest 10, FitReceipt 8, ReLoop 6, LessonScript 9 and RhythmWeave 6. Every package passes TypeScript and its production build; CultureRoute also passes the Eve build. This is 52 test executions including repeated shared checks, not 52 distinct tests. The CrowdQuest root page was corrected to use a Next.js page wrapper before the final successful check. Check logs and export-time status are inside each archive.
+
+The extraction generator keeps only the product's local dependency closure and required application routes, adds its own root homepage and configuration, and includes a full event-specific submission draft. Each archive excludes local secrets, dependencies and build outputs. HandoverShelf is packaged separately with its already-validated native Skill, PDF and initial ZIP. No new remote repositories or submissions were created by this packaging step.
+
+## Shared portfolio verification
+
 `npm run check` passed: TypeScript, **33 tests in five files**, Eve production build and Next.js production build. Next generated 37 pages/routes in its static generation pass. The official Qloo package is imported by its documented exec entry point; its real workflow help command runs in the packaging test without an API key. Eve's build completed at approximately 20 MB after including the harness.
 
 ## What was exercised

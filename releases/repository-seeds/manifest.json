@@ -1,0 +1,180 @@
+{
+  "createdAt": "2026-10-27T10:10:01.854134+00:00",
+  "products": [
+    {
+      "product": "fieldbrief",
+      "proposedRepository": "code-up-matrix/fieldbrief-devpost-2026",
+      "archive": "releases/repository-seeds/fieldbrief-devpost-2026.zip",
+      "bytes": 50028,
+      "sha256": "aa76eaeaf9e50cadb602237b21f20812537fd63a8d7dcdedd10dbf0d0f92f9ed",
+      "files": 42,
+      "verification": {
+        "product": "fieldbrief",
+        "checkedAt": "2026-10-27T09:58:00.657189+00:00",
+        "checkExit": 0,
+        "testCount": 8,
+        "typecheckPassed": true,
+        "productionBuildPassed": true,
+        "liveIntegrationVerified": false,
+        "cloudDeployed": false,
+        "submitted": false,
+        "elapsedSeconds": 17
+      },
+      "repositoryCreated": false,
+      "cloudDeployed": false,
+      "submitted": false
+    },
+    {
+      "product": "cultureroute",
+      "proposedRepository": "code-up-matrix/cultureroute-devpost-2026",
+      "archive": "releases/repository-seeds/cultureroute-devpost-2026.zip",
+      "bytes": 179957,
+      "sha256": "37c23e82b14c9349fe638d5e9c7c36811039756cfab90beff19e788aa815bbe3",
+      "files": 77,
+      "verification": {
+        "product": "cultureroute",
+        "checkedAt": "2026-10-27T09:57:43.867643+00:00",
+        "checkExit": 0,
+        "testCount": 5,
+        "typecheckPassed": true,
+        "productionBuildPassed": true,
+        "liveIntegrationVerified": false,
+        "cloudDeployed": false,
+        "submitted": false,
+        "elapsedSeconds": 79
+      },
+      "repositoryCreated": false,
+      "cloudDeployed": false,
+      "submitted": false
+    },
+    {
+      "product": "crowdquest",
+      "proposedRepository": "code-up-matrix/crowdquest-devpost-2026",
+      "archive": "releases/repository-seeds/crowdquest-devpost-2026.zip",
+      "bytes": 54240,
+      "sha256": "c3cba33d0de679996648c8a4773119d2bc6d3e8f8b618acd0b46921094fad7ee",
+      "files": 46,
+      "verification": {
+        "product": "crowdquest",
+        "checkedAt": "2026-10-27T10:07:27.873947+00:00",
+        "checkExit": 0,
+        "testCount": 10,
+        "typecheckPassed": true,
+        "productionBuildPassed": true,
+        "liveIntegrationVerified": false,
+        "cloudDeployed": false,
+        "submitted": false
+      },
+      "repositoryCreated": false,
+      "cloudDeployed": false,
+      "submitted": false
+    },
+    {
+      "product": "fitreceipt",
+      "proposedRepository": "code-up-matrix/fitreceipt-devpost-2026",
+      "archive": "releases/repository-seeds/fitreceipt-devpost-2026.zip",
+      "bytes": 50964,
+      "sha256": "4a7addca5d337cb39fe72b1c5c43ae9a1c1ed11d9551cf0af9ac4ff56191518e",
+      "files": 43,
+      "verification": {
+        "product": "fitreceipt",
+        "checkedAt": "2026-10-27T09:58:17.597850+00:00",
+        "checkExit": 0,
+        "testCount": 8,
+        "typecheckPassed": true,
+        "productionBuildPassed": true,
+        "liveIntegrationVerified": false,
+        "cloudDeployed": false,
+        "submitted": false,
+        "elapsedSeconds": 17
+      },
+      "repositoryCreated": false,
+      "cloudDeployed": false,
+      "submitted": false
+    },
+    {
+      "product": "reloop",
+      "proposedRepository": "code-up-matrix/reloop-devpost-2026",
+      "archive": "releases/repository-seeds/reloop-devpost-2026.zip",
+      "bytes": 48846,
+      "sha256": "05af6dc587ea58457ae1edec25462757d6fde7849f08311310eb1d0792dc6f93",
+      "files": 42,
+      "verification": {
+        "product": "reloop",
+        "checkedAt": "2026-10-27T09:58:53.203894+00:00",
+        "checkExit": 0,
+        "testCount": 6,
+        "typecheckPassed": true,
+        "productionBuildPassed": true,
+        "liveIntegrationVerified": false,
+        "cloudDeployed": false,
+        "submitted": false,
+        "elapsedSeconds": 18
+      },
+      "repositoryCreated": false,
+      "cloudDeployed": false,
+      "submitted": false
+    },
+    {
+      "product": "lessonscript",
+      "proposedRepository": "code-up-matrix/lessonscript-devpost-2026",
+      "archive": "releases/repository-seeds/lessonscript-devpost-2026.zip",
+      "bytes": 49240,
+      "sha256": "b9f1aa435c35cd5edc0c6c84070fa29ada06f80e4eb004a71a35bf050c9bb476",
+      "files": 42,
+      "verification": {
+        "product": "lessonscript",
+        "checkedAt": "2026-10-27T09:58:34.743645+00:00",
+        "checkExit": 0,
+        "testCount": 9,
+        "typecheckPassed": true,
+        "productionBuildPassed": true,
+        "liveIntegrationVerified": false,
+        "cloudDeployed": false,
+        "submitted": false,
+        "elapsedSeconds": 17
+      },
+      "repositoryCreated": false,
+      "cloudDeployed": false,
+      "submitted": false
+    },
+    {
+      "product": "rhythmweave",
+      "proposedRepository": "code-up-matrix/rhythmweave-devpost-2026",
+      "archive": "releases/repository-seeds/rhythmweave-devpost-2026.zip",
+      "bytes": 48505,
+      "sha256": "d0fe654428ad90371c981c60789f4f11eba841adfbe03decf1539289041fa873",
+      "files": 42,
+      "verification": {
+        "product": "rhythmweave",
+        "checkedAt": "2026-10-27T09:59:12.521003+00:00",
+        "checkExit": 0,
+        "testCount": 6,
+        "typecheckPassed": true,
+        "productionBuildPassed": true,
+        "liveIntegrationVerified": false,
+        "cloudDeployed": false,
+        "submitted": false,
+        "elapsedSeconds": 19
+      },
+      "repositoryCreated": false,
+      "cloudDeployed": false,
+      "submitted": false
+    },
+    {
+      "product": "handovershelf",
+      "proposedRepository": "code-up-matrix/handovershelf-devpost-2026",
+      "archive": "releases/repository-seeds/handovershelf-devpost-2026.zip",
+      "bytes": 52780,
+      "sha256": "bff0ad1c78f1b95fd328e20b659570d5c1ff469ba60de14c9e711a77fe4d22ee",
+      "files": 9,
+      "verification": {
+        "staticValidationPassed": true,
+        "nasRuntimeVerified": false
+      },
+      "repositoryCreated": false,
+      "cloudDeployed": false,
+      "submitted": false
+    }
+  ]
+}

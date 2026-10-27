@@ -2,6 +2,8 @@
 > Start at `/lab` for seven new product modules, `/lab/catalog` for the event/idea matrix and `/lab/history` for saved work. Source is prepared; live deployment and sponsor verification are pending.
 >
 > Read [the Devpost catalog](docs/DEVPOST-CATALOG.md), [deployment and blockers](docs/DEVPOST-DEPLOYMENT.md), [demo plans](docs/DEVPOST-DEMO-PLANS.md), and [verification](docs/DEVPOST-VERIFICATION.md). [HandoverShelf](native/handovershelf/README.md) includes the UGREEN native package and proposal. This branch also retains the existing PayProof application below.
+>
+> [Eight independent repository source packages](releases/repository-seeds/README.md) are now prepared, with event-specific submission drafts. All seven web packages independently pass TypeScript, tests and production builds. Separate remote repository creation, cloud deployment and final submission are still outstanding.
 
 # AXIOS PayProof
 

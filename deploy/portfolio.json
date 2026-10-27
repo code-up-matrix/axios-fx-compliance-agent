@@ -11,7 +11,10 @@
       "event": "https://nebiusglobalaihackathon.devpost.com/",
       "status": "Implemented; deployment blocked",
       "deploymentId": null,
-      "deploymentUrl": null
+      "deploymentUrl": null,
+      "sourceArchive": "releases/repository-seeds/fieldbrief-devpost-2026.zip",
+      "standaloneLandingPath": "/",
+      "submitted": false
     },
     {
       "product": "AXIOS PayProof",
@@ -31,7 +34,10 @@
       "event": "https://qloo.devpost.com/",
       "status": "Implemented; deployment blocked",
       "deploymentId": null,
-      "deploymentUrl": null
+      "deploymentUrl": null,
+      "sourceArchive": "releases/repository-seeds/cultureroute-devpost-2026.zip",
+      "standaloneLandingPath": "/",
+      "submitted": false
     },
     {
       "product": "CrowdQuest",
@@ -41,7 +47,10 @@
       "event": "https://twitchcon-codex.devpost.com/",
       "status": "Implemented; deployment blocked",
       "deploymentId": null,
-      "deploymentUrl": null
+      "deploymentUrl": null,
+      "sourceArchive": "releases/repository-seeds/crowdquest-devpost-2026.zip",
+      "standaloneLandingPath": "/",
+      "submitted": false
     },
     {
       "product": "FitReceipt",
@@ -51,7 +60,10 @@
       "event": "https://youcam-api-skin-ai-ecommerce.devpost.com/",
       "status": "Implemented; deployment blocked",
       "deploymentId": null,
-      "deploymentUrl": null
+      "deploymentUrl": null,
+      "sourceArchive": "releases/repository-seeds/fitreceipt-devpost-2026.zip",
+      "standaloneLandingPath": "/",
+      "submitted": false
     },
     {
       "product": "HandoverShelf",
@@ -61,7 +73,10 @@
       "event": "https://ugreenhackathon.devpost.com/",
       "status": "Native package prepared",
       "deploymentId": null,
-      "deploymentUrl": null
+      "deploymentUrl": null,
+      "sourceArchive": "releases/repository-seeds/handovershelf-devpost-2026.zip",
+      "standaloneLandingPath": null,
+      "submitted": false
     },
     {
       "product": "ReLoop",
@@ -71,7 +86,10 @@
       "event": "https://arbiter-hacks-v1.devpost.com/",
       "status": "Implemented; eligibility hold",
       "deploymentId": null,
-      "deploymentUrl": null
+      "deploymentUrl": null,
+      "sourceArchive": "releases/repository-seeds/reloop-devpost-2026.zip",
+      "standaloneLandingPath": "/",
+      "submitted": false
     },
     {
       "product": "LessonScript",
@@ -81,7 +99,10 @@
       "event": "https://syntax-summit.devpost.com/",
       "status": "Implemented; eligibility hold",
       "deploymentId": null,
-      "deploymentUrl": null
+      "deploymentUrl": null,
+      "sourceArchive": "releases/repository-seeds/lessonscript-devpost-2026.zip",
+      "standaloneLandingPath": "/",
+      "submitted": false
     },
     {
       "product": "RhythmWeave",
@@ -91,7 +112,10 @@
       "event": "https://innovart2027.devpost.com/",
       "status": "Implemented; eligibility hold",
       "deploymentId": null,
-      "deploymentUrl": null
+      "deploymentUrl": null,
+      "sourceArchive": "releases/repository-seeds/rhythmweave-devpost-2026.zip",
+      "standaloneLandingPath": "/",
+      "submitted": false
     }
   ]
 }
