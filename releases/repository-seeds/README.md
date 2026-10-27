@@ -1,6 +1,6 @@
 # Independent Devpost project sources
 
-These archives contain separate, runnable source trees prepared for new repositories in **code-up-matrix**. They are currently stored in the existing portfolio repository. A ZIP, folder or branch is not a newly created GitHub repository.
+These archives contain separate, runnable source trees that have now been published to [eight public repositories in code-up-matrix](../../docs/DEVPOST-REPOSITORIES.md). The archives preserve their original export-time status and checksums; the current remote URLs and verified commits are recorded separately in [published-repositories.json](../../deploy/published-repositories.json).
 
 | Event | Product source | Local verification | Submission status |
 | --- | --- | --- | --- |
@@ -29,6 +29,6 @@ node scripts/export-event-repositories.mjs /tmp/devpost-event-repositories
 
 Run npm run check in each exported web project and record its real verification result before packaging. `scripts/package-event-repositories.py` refuses a package without a passing recorded result. Exporting alone does not verify or deploy anything.
 
-`python scripts/provision-event-repositories.py` validates the checksums and prints the exact eight-repository creation plan. In an environment where the GitHub CLI is already authenticated as code-up-matrix, `--apply` creates public repositories and pushes their sources. It stops on account mismatch or errors and never overwrites an existing repository. The command has only been run in plan mode here: this environment has no authenticated gh CLI, and the GitHub connector lacks repository creation.
+`python scripts/provision-event-repositories.py` validates the checksums and prints the original eight-repository creation plan. Its `--apply` mode is not needed now: all eight repositories already exist. Creation was completed through authenticated GitHub UI, followed by source publication through the GitHub connector. The helper was only run in plan mode and refuses to overwrite an existing repository.
 
 Vercel still requires the exact team grant for emmanuel-dukes-projects. Each web project then needs its own database, selected provider credentials, live verification and recording. All final Devpost submissions remain outstanding. Preserve the original source reference and disclose shared infrastructure and Codex assistance.

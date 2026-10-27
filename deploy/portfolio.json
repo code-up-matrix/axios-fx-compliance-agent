@@ -6,7 +6,7 @@
     {
       "product": "FieldBrief",
       "proposedRepository": "code-up-matrix/fieldbrief-devpost-2026",
-      "repositoryCreated": false,
+      "repositoryCreated": true,
       "landingPath": "/lab/fieldbrief",
       "event": "https://nebiusglobalaihackathon.devpost.com/",
       "status": "Implemented; deployment blocked",
@@ -14,7 +14,11 @@
       "deploymentUrl": null,
       "sourceArchive": "releases/repository-seeds/fieldbrief-devpost-2026.zip",
       "standaloneLandingPath": "/",
-      "submitted": false
+      "submitted": false,
+      "repositoryUrl": "https://github.com/code-up-matrix/fieldbrief-devpost-2026",
+      "repositoryCommit": "da18a28399b11e894d5a49fb2ca6f1f79c5013ad",
+      "sourceVerified": true,
+      "cloudDeployed": false
     },
     {
       "product": "AXIOS PayProof",
@@ -29,7 +33,7 @@
     {
       "product": "CultureRoute",
       "proposedRepository": "code-up-matrix/cultureroute-devpost-2026",
-      "repositoryCreated": false,
+      "repositoryCreated": true,
       "landingPath": "/lab/cultureroute",
       "event": "https://qloo.devpost.com/",
       "status": "Implemented; deployment blocked",
@@ -37,12 +41,16 @@
       "deploymentUrl": null,
       "sourceArchive": "releases/repository-seeds/cultureroute-devpost-2026.zip",
       "standaloneLandingPath": "/",
-      "submitted": false
+      "submitted": false,
+      "repositoryUrl": "https://github.com/code-up-matrix/cultureroute-devpost-2026",
+      "repositoryCommit": "579af4776e1df1cfc135aac843805937efb4a9d6",
+      "sourceVerified": true,
+      "cloudDeployed": false
     },
     {
       "product": "CrowdQuest",
       "proposedRepository": "code-up-matrix/crowdquest-devpost-2026",
-      "repositoryCreated": false,
+      "repositoryCreated": true,
       "landingPath": "/lab/crowdquest",
       "event": "https://twitchcon-codex.devpost.com/",
       "status": "Implemented; deployment blocked",
@@ -50,12 +58,16 @@
       "deploymentUrl": null,
       "sourceArchive": "releases/repository-seeds/crowdquest-devpost-2026.zip",
       "standaloneLandingPath": "/",
-      "submitted": false
+      "submitted": false,
+      "repositoryUrl": "https://github.com/code-up-matrix/crowdquest-devpost-2026",
+      "repositoryCommit": "9ffcecf3de776f8ab631e9d1196c348c466c29d2",
+      "sourceVerified": true,
+      "cloudDeployed": false
     },
     {
       "product": "FitReceipt",
       "proposedRepository": "code-up-matrix/fitreceipt-devpost-2026",
-      "repositoryCreated": false,
+      "repositoryCreated": true,
       "landingPath": "/lab/fitreceipt",
       "event": "https://youcam-api-skin-ai-ecommerce.devpost.com/",
       "status": "Implemented; deployment blocked",
@@ -63,12 +75,16 @@
       "deploymentUrl": null,
       "sourceArchive": "releases/repository-seeds/fitreceipt-devpost-2026.zip",
       "standaloneLandingPath": "/",
-      "submitted": false
+      "submitted": false,
+      "repositoryUrl": "https://github.com/code-up-matrix/fitreceipt-devpost-2026",
+      "repositoryCommit": "31f7e998c335105295f7cc2dba6a35aa2be96d98",
+      "sourceVerified": true,
+      "cloudDeployed": false
     },
     {
       "product": "HandoverShelf",
       "proposedRepository": "code-up-matrix/handovershelf-devpost-2026",
-      "repositoryCreated": false,
+      "repositoryCreated": true,
       "landingPath": null,
       "event": "https://ugreenhackathon.devpost.com/",
       "status": "Native package prepared",
@@ -76,12 +92,16 @@
       "deploymentUrl": null,
       "sourceArchive": "releases/repository-seeds/handovershelf-devpost-2026.zip",
       "standaloneLandingPath": null,
-      "submitted": false
+      "submitted": false,
+      "repositoryUrl": "https://github.com/code-up-matrix/handovershelf-devpost-2026",
+      "repositoryCommit": "b8daf01b14e8369b57530cea5d01243109301d02",
+      "sourceVerified": true,
+      "cloudDeployed": false
     },
     {
       "product": "ReLoop",
       "proposedRepository": "code-up-matrix/reloop-devpost-2026",
-      "repositoryCreated": false,
+      "repositoryCreated": true,
       "landingPath": "/lab/reloop",
       "event": "https://arbiter-hacks-v1.devpost.com/",
       "status": "Implemented; eligibility hold",
@@ -89,12 +109,16 @@
       "deploymentUrl": null,
       "sourceArchive": "releases/repository-seeds/reloop-devpost-2026.zip",
       "standaloneLandingPath": "/",
-      "submitted": false
+      "submitted": false,
+      "repositoryUrl": "https://github.com/code-up-matrix/reloop-devpost-2026",
+      "repositoryCommit": "2070187c297e508860bd6122a3a993bcbe8425ea",
+      "sourceVerified": true,
+      "cloudDeployed": false
     },
     {
       "product": "LessonScript",
       "proposedRepository": "code-up-matrix/lessonscript-devpost-2026",
-      "repositoryCreated": false,
+      "repositoryCreated": true,
       "landingPath": "/lab/lessonscript",
       "event": "https://syntax-summit.devpost.com/",
       "status": "Implemented; eligibility hold",
@@ -102,12 +126,16 @@
       "deploymentUrl": null,
       "sourceArchive": "releases/repository-seeds/lessonscript-devpost-2026.zip",
       "standaloneLandingPath": "/",
-      "submitted": false
+      "submitted": false,
+      "repositoryUrl": "https://github.com/code-up-matrix/lessonscript-devpost-2026",
+      "repositoryCommit": "780e475eae228deb19e4a1341ee0c045d8215465",
+      "sourceVerified": true,
+      "cloudDeployed": false
     },
     {
       "product": "RhythmWeave",
       "proposedRepository": "code-up-matrix/rhythmweave-devpost-2026",
-      "repositoryCreated": false,
+      "repositoryCreated": true,
       "landingPath": "/lab/rhythmweave",
       "event": "https://innovart2027.devpost.com/",
       "status": "Implemented; eligibility hold",
@@ -115,7 +143,11 @@
       "deploymentUrl": null,
       "sourceArchive": "releases/repository-seeds/rhythmweave-devpost-2026.zip",
       "standaloneLandingPath": "/",
-      "submitted": false
+      "submitted": false,
+      "repositoryUrl": "https://github.com/code-up-matrix/rhythmweave-devpost-2026",
+      "repositoryCommit": "675b7c79a0dbafa8806e36ced143c54c565bc41d",
+      "sourceVerified": true,
+      "cloudDeployed": false
     }
   ]
 }

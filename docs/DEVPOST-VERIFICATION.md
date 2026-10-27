@@ -1,5 +1,9 @@
 # Verification record — 27 October 2026
 
+## Published repositories
+
+Eight separate public repositories were created under `code-up-matrix` and populated from the independently checked source archives. All eight `main` heads, Git tree identifiers and complete file lists were read back through GitHub and matched the publication records: 343 files in total. [Repository links and remaining requirements](DEVPOST-REPOSITORIES.md) and [exact commit/tree records](../deploy/published-repositories.json) are available. Publication changed repository/status documentation only; application code, dependencies and test configuration are unchanged from the checked archives. No deployment or submission is implied by publication.
+
 ## Independent project verification
 
 The [independent repository packages](../releases/repository-seeds/README.md) have each been checked separately: FieldBrief 8 tests, CultureRoute 5, CrowdQuest 10, FitReceipt 8, ReLoop 6, LessonScript 9 and RhythmWeave 6. Every package passes TypeScript and its production build; CultureRoute also passes the Eve build. This is 52 test executions including repeated shared checks, not 52 distinct tests. The CrowdQuest root page was corrected to use a Next.js page wrapper before the final successful check. Check logs and export-time status are inside each archive.
@@ -36,4 +40,4 @@ Vercel deployment, Neon provisioning/migration, live Nebius/Qloo/YouCam calls, a
 
 The local Eve build emitted a warning that no Docker/Vercel sandbox provider was available. Default tools are disabled and the authored integrations do not depend on that local sandbox; nevertheless, a completed build is not runtime proof. No fake runtime success was used to clear a gate.
 
-Vercel still returned 403 for the intended team when rechecked after implementation. New GitHub repositories cannot be created by the current connector; the authenticated browser creation flow is also not yet available. The source is prepared on the isolated portfolio branch pending these access steps.
+Vercel still returned 403 for the intended team after repository publication. GitHub creation and publication are complete; the remaining access step is Vercel's team-consent grant, followed by each provider's required credentials and live verification.

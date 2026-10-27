@@ -3,7 +3,7 @@
 >
 > Read [the Devpost catalog](docs/DEVPOST-CATALOG.md), [deployment and blockers](docs/DEVPOST-DEPLOYMENT.md), [demo plans](docs/DEVPOST-DEMO-PLANS.md), and [verification](docs/DEVPOST-VERIFICATION.md). [HandoverShelf](native/handovershelf/README.md) includes the UGREEN native package and proposal. This branch also retains the existing PayProof application below.
 >
-> [Eight independent repository source packages](releases/repository-seeds/README.md) are now prepared, with event-specific submission drafts. All seven web packages independently pass TypeScript, tests and production builds. Separate remote repository creation, cloud deployment and final submission are still outstanding.
+> [Eight independent public repositories](docs/DEVPOST-REPOSITORIES.md) are now created and populated under `code-up-matrix`, with event-specific submission drafts. All seven web projects independently pass TypeScript, tests and production builds. The [original source archives](releases/repository-seeds/README.md) remain available. Cloud deployment, live sponsor verification and final submission are still outstanding.
 
 # AXIOS PayProof
 

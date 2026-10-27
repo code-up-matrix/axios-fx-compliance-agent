@@ -176,5 +176,7 @@
       "cloudDeployed": false,
       "submitted": false
     }
-  ]
+  ],
+  "publicationRecord": "deploy/published-repositories.json",
+  "statusScope": "Archive verification and repositoryCreated fields describe export time. See publicationRecord for current remote status."
 }

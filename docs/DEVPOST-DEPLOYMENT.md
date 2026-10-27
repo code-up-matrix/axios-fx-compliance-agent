@@ -4,7 +4,7 @@ This isolated branch preserves the existing PayProof app and adds seven distinct
 
 ## Current external blockers
 
-- GitHub account: `code-up-matrix`. The connected API can commit to an existing repo, but exposes no repository-creation operation. The browser sign-in flow could not complete because browser control repeatedly timed out. The prepared branch is `devpost/portfolio-2026` in `axios-fx-compliance-agent`.
+- GitHub access is resolved: Google sign-in and GitHub two-factor authentication succeeded, and [eight separate public repositories](DEVPOST-REPOSITORIES.md) were created under `code-up-matrix`. Their published `main` commits and complete file lists were verified. The combined source remains on `devpost/portfolio-2026` in `axios-fx-compliance-agent`.
 - Vercel: the connection returns 403 for `team_64IDAvx3sgtTRCQpQavfF3cG` / `emmanuel-dukes-projects`, because that team has not granted access. Use Vercel's team-consent flow; do not silently switch teams.
 - No database, provider credential or live deployment was created for these new apps. Local tests use synthetic inputs, stubbed provider replies and an actual in-memory PostgreSQL engine. They do not establish live sponsor connectivity.
 
@@ -23,7 +23,7 @@ This isolated branch preserves the existing PayProof app and adds seven distinct
 
 Every app uses `DATABASE_URL`, `SESSION_SECRET`, `APP_ORIGIN`, `OPERATOR_ACCESS_CODE`, `JUDGE_ACCESS_CODE` for protected operations. Use random, independent values; the secret must be at least 32 characters and codes at least 12. `CRON_SECRET` must also be random and at least 32 characters. Never use a `NEXT_PUBLIC_` secret. Use separate databases and credentials for preview and production.
 
-The portfolio source tree is also exported as [eight independent repository packages](../releases/repository-seeds/README.md). Each web package has a product homepage at `/`, the required API and its own environment template. `deploy/portfolio.json` gives proposed repo names and portfolio landing paths. Create actual separate repos from these reviewed packages, preserve the MIT license and original source provenance, and disclose reused scaffolding in each entry. Do not describe a branch or folder as a separate repository. Avoid deploying unrelated provider credentials to each project. The standalone projects have their own deployment instructions under `docs/DEPLOYMENT.md`; the sequence below describes the combined Eve portfolio.
+The portfolio source tree is also exported as [eight independent repository packages](../releases/repository-seeds/README.md), now published in [eight actual repositories](DEVPOST-REPOSITORIES.md). Each web project has a product homepage at `/`, the required API and its own environment template. `deploy/portfolio.json` records the repository URLs, verified commits and portfolio landing paths. Preserve the MIT license and original source provenance, and disclose reused scaffolding in each entry. Avoid deploying unrelated provider credentials to each project. The standalone projects have their own deployment instructions under `docs/DEPLOYMENT.md`; the sequence below describes the combined Eve portfolio.
 
 ## Provisioning sequence
 
