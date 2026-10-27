@@ -5,8 +5,8 @@ This isolated branch preserves the existing PayProof app and adds seven distinct
 ## Current external blockers
 
 - GitHub access is resolved: Google sign-in and GitHub two-factor authentication succeeded, and [eight separate public repositories](DEVPOST-REPOSITORIES.md) were created under `code-up-matrix`. Their published `main` commits and complete file lists were verified. The combined source remains on `devpost/portfolio-2026` in `axios-fx-compliance-agent`.
-- Vercel: the connection returns 403 for `team_64IDAvx3sgtTRCQpQavfF3cG` / `emmanuel-dukes-projects`, because that team has not granted access. Use Vercel's team-consent flow; do not silently switch teams.
-- No database, provider credential or live deployment was created for these new apps. Local tests use synthetic inputs, stubbed provider replies and an actual in-memory PostgreSQL engine. They do not establish live sponsor connectivity.
+- Vercel: team access is authorized. Seven dedicated projects are deployed and their latest builds report READY. [Live URLs and evidence](DEVPOST-HOSTING.md) distinguish hosting from unfinished backend setup.
+- No database or sponsor credential has been provisioned for these new apps. Random signing/access/cron secrets and exact production origins are configured in Vercel. Local tests use synthetic inputs, stubbed provider replies and an actual in-memory PostgreSQL engine. They do not establish live sponsor connectivity.
 
 ## Deployable products
 
@@ -27,7 +27,7 @@ The portfolio source tree is also exported as [eight independent repository pack
 
 ## Provisioning sequence
 
-1. Obtain the Vercel grant for the exact team, then create/link each intended project. This Eve project requires `eve link --non-interactive --project <confirmed-name-or-id> --team team_64IDAvx3sgtTRCQpQavfF3cG`. Do not start a local dev server before linking and selecting its environment.
+1. The exact team grant and seven dedicated projects are in place. Use the project IDs in `deploy/vercel-deployments.json`. For further local setup, link the intended project. This Eve project requires `eve link --non-interactive --project <confirmed-name-or-id> --team team_64IDAvx3sgtTRCQpQavfF3cG`. Do not start a local dev server before linking and selecting its environment.
 2. Install a dedicated Neon Postgres database through Vercel Marketplace, review the selected free/paid plan and region, and attach its URL to the correct project. Avoid paid upgrades without a chosen budget.
 3. Set shared secrets and the product's provider values using the platform secret store. Pull the correct environment without printing secrets. Set `APP_ORIGIN` to the exact final HTTPS origin.
 4. Run `npm ci`, `npm run check`, then `npm run db:migrate` against the selected empty project database. Migrations are additive/idempotent and never run during the build. Verify all three migration files were applied. Do not reset an existing database.
@@ -61,4 +61,4 @@ FieldBrief validates citation identifiers, not the semantic truth of a model's c
 - Working judge access, event-specific video and remaining submission artifacts.
 - A documented service owner, budget and retention policy.
 
-Rollback by promoting the previous verified Vercel deployment. Database changes are additive. No cloud deployment, live API run, recording, participant registration or submission is asserted by this document.
+Rollback by promoting the previous verified Vercel deployment. Database changes are additive. Cloud hosting is recorded in DEVPOST-HOSTING.md. No successful database/provider workflow, recording, participant registration or submission is asserted by this document.

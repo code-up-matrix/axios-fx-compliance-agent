@@ -1,9 +1,9 @@
 > **Devpost portfolio branch — 27 October 2026**
-> Start at `/lab` for seven new product modules, `/lab/catalog` for the event/idea matrix and `/lab/history` for saved work. Source is prepared; live deployment and sponsor verification are pending.
+> Start at `/lab` for seven new product modules, `/lab/catalog` for the event/idea matrix and `/lab/history` for saved work. Seven standalone web apps are hosted on Vercel; connected backend and sponsor verification are pending. See [live URLs and checks](docs/DEVPOST-HOSTING.md).
 >
 > Read [the Devpost catalog](docs/DEVPOST-CATALOG.md), [deployment and blockers](docs/DEVPOST-DEPLOYMENT.md), [demo plans](docs/DEVPOST-DEMO-PLANS.md), and [verification](docs/DEVPOST-VERIFICATION.md). [HandoverShelf](native/handovershelf/README.md) includes the UGREEN native package and proposal. This branch also retains the existing PayProof application below.
 >
-> [Eight independent public repositories](docs/DEVPOST-REPOSITORIES.md) are now created and populated under `code-up-matrix`, with event-specific submission drafts. All seven web projects independently pass TypeScript, tests and production builds. The [original source archives](releases/repository-seeds/README.md) remain available. Cloud deployment, live sponsor verification and final submission are still outstanding.
+> [Eight independent public repositories](docs/DEVPOST-REPOSITORIES.md) are now created and populated under `code-up-matrix`, with event-specific submission drafts. All seven web projects independently pass TypeScript, tests and production builds. The [original source archives](releases/repository-seeds/README.md) remain available. The seven web apps are deployed to Vercel. Database provisioning, live sponsor verification and final submission are still outstanding.
 
 # AXIOS PayProof
 
@@ -11,7 +11,7 @@ An AI purchase planner that keeps exact prices, explicit human approval and PayP
 
 **Target:** PayPal AI Hackathon.
 
-**Status:** implemented and locally tested. Vercel team authorization and live backend/provider setup remain required. No production deployment or competition submission is claimed.
+**Status:** implemented and locally tested. Vercel team authorization is complete; live backend/provider setup remains required. No production deployment or competition submission is claimed.
 
 Repository: https://github.com/code-up-matrix/axios-fx-compliance-agent
 

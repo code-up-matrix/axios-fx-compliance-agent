@@ -1,0 +1,280 @@
+{
+  "teamAuthorizationVerified": true,
+  "teamId": "team_64IDAvx3sgtTRCQpQavfF3cG",
+  "teamSlug": "emmanuel-dukes-projects",
+  "projects": [
+    {
+      "product": "fieldbrief",
+      "repository": "code-up-matrix/fieldbrief-devpost-2026",
+      "repositoryCommit": "2cab894e316c6960ccb8d5e47d1adde2de916c2e",
+      "projectId": "prj_QnKzRxtAmiZ9EEaNJuxPgATe5qAZ",
+      "teamId": "team_64IDAvx3sgtTRCQpQavfF3cG",
+      "deploymentId": "dpl_8rVTSxUQpJZZnSC6i7n1uesEx1Yb",
+      "deploymentUrl": "https://fieldbrief-devpost-2026-gncmuk9yy-emmanuel-dukes-projects.vercel.app",
+      "url": "https://fieldbrief-devpost-2026.vercel.app",
+      "target": "production",
+      "state": "READY",
+      "cloudDeployed": true,
+      "productionReady": false,
+      "databaseProvisioned": false,
+      "liveIntegrationVerified": false,
+      "submitted": false,
+      "configuredKeys": [
+        "SESSION_SECRET",
+        "OPERATOR_ACCESS_CODE",
+        "JUDGE_ACCESS_CODE",
+        "CRON_SECRET",
+        "APP_ORIGIN"
+      ],
+      "health": {
+        "url": "https://fieldbrief-devpost-2026.vercel.app/api/health",
+        "status": 200,
+        "body": {
+          "application": "FieldBrief",
+          "status": "configuration_required",
+          "missing": [
+            "DATABASE_URL",
+            "NEBIUS_API_KEY",
+            "NEBIUS_NVIDIA_MODEL"
+          ],
+          "version": "1.0.0"
+        },
+        "checkedAt": "2026-10-27T15:09:24.698Z"
+      },
+      "checkedAt": "2026-10-27T15:16:29.967Z"
+    },
+    {
+      "product": "cultureroute",
+      "repository": "code-up-matrix/cultureroute-devpost-2026",
+      "repositoryCommit": "c05e2cfc61cea0493e5978c81b9467d24bc0bf8f",
+      "projectId": "prj_BfYDIU34WkUJMuP4ofUBwvcEL5sP",
+      "teamId": "team_64IDAvx3sgtTRCQpQavfF3cG",
+      "deploymentId": "dpl_BkAw3JtJEh6LFNHag5dqMqQuZ8uH",
+      "deploymentUrl": "https://cultureroute-devpost-2026-53ff5ezkm-emmanuel-dukes-projects.vercel.app",
+      "url": "https://cultureroute-devpost-2026.vercel.app",
+      "target": "production",
+      "state": "READY",
+      "cloudDeployed": true,
+      "productionReady": false,
+      "databaseProvisioned": false,
+      "liveIntegrationVerified": false,
+      "submitted": false,
+      "configuredKeys": [
+        "SESSION_SECRET",
+        "OPERATOR_ACCESS_CODE",
+        "JUDGE_ACCESS_CODE",
+        "CRON_SECRET",
+        "APP_ORIGIN"
+      ],
+      "health": {
+        "url": "https://cultureroute-devpost-2026.vercel.app/api/health",
+        "status": 200,
+        "body": {
+          "application": "CultureRoute",
+          "status": "configuration_required",
+          "missing": [
+            "DATABASE_URL",
+            "QLOO_API_KEY"
+          ],
+          "version": "1.0.0"
+        },
+        "checkedAt": "2026-10-27T15:14:45.535Z",
+        "method": "public HTTPS GET; no share link or credentials"
+      },
+      "checkedAt": "2026-10-27T15:16:29.967Z"
+    },
+    {
+      "product": "crowdquest",
+      "repository": "code-up-matrix/crowdquest-devpost-2026",
+      "repositoryCommit": "3aa44cdfcdc31a957f7771bc99d5aae8e581210f",
+      "projectId": "prj_jlsb6CvPALu5VHlo9y9vbQI2Z5Q8",
+      "teamId": "team_64IDAvx3sgtTRCQpQavfF3cG",
+      "deploymentId": "dpl_AFnWfow1kASdEHrZseri2qFtj9EM",
+      "deploymentUrl": "https://crowdquest-devpost-2026-9k87zq1jj-emmanuel-dukes-projects.vercel.app",
+      "url": "https://crowdquest-devpost-2026.vercel.app",
+      "target": "production",
+      "state": "READY",
+      "cloudDeployed": true,
+      "productionReady": false,
+      "databaseProvisioned": false,
+      "liveIntegrationVerified": false,
+      "submitted": false,
+      "configuredKeys": [
+        "SESSION_SECRET",
+        "OPERATOR_ACCESS_CODE",
+        "JUDGE_ACCESS_CODE",
+        "CRON_SECRET",
+        "TWITCH_WEBHOOK_SECRET",
+        "APP_ORIGIN"
+      ],
+      "health": {
+        "url": "https://crowdquest-devpost-2026.vercel.app/api/health",
+        "status": 200,
+        "body": {
+          "application": "CrowdQuest",
+          "status": "configuration_required",
+          "missing": [
+            "DATABASE_URL",
+            "TWITCH_BROADCASTER_ID"
+          ],
+          "version": "1.0.0"
+        },
+        "checkedAt": "2026-10-27T15:04:47.467Z"
+      },
+      "checkedAt": "2026-10-27T15:16:29.967Z"
+    },
+    {
+      "product": "fitreceipt",
+      "repository": "code-up-matrix/fitreceipt-devpost-2026",
+      "repositoryCommit": "34872252e091599b6ff84fc72080a1037c0412bb",
+      "projectId": "prj_SIYbiUGfZFVeukPJA5ttIBI3HjRK",
+      "teamId": "team_64IDAvx3sgtTRCQpQavfF3cG",
+      "deploymentId": "dpl_GHtZjMrNCC5hAVcQVyWMAMGaa17X",
+      "deploymentUrl": "https://fitreceipt-devpost-2026-8aajvdszm-emmanuel-dukes-projects.vercel.app",
+      "url": "https://fitreceipt-devpost-2026.vercel.app",
+      "target": "production",
+      "state": "READY",
+      "cloudDeployed": true,
+      "productionReady": false,
+      "databaseProvisioned": false,
+      "liveIntegrationVerified": false,
+      "submitted": false,
+      "configuredKeys": [
+        "SESSION_SECRET",
+        "OPERATOR_ACCESS_CODE",
+        "JUDGE_ACCESS_CODE",
+        "CRON_SECRET",
+        "APP_ORIGIN"
+      ],
+      "health": {
+        "url": "https://fitreceipt-devpost-2026.vercel.app/api/health",
+        "status": 200,
+        "body": {
+          "application": "FitReceipt",
+          "status": "configuration_required",
+          "missing": [
+            "DATABASE_URL",
+            "YOUCAM_API_KEY"
+          ],
+          "version": "1.0.0"
+        },
+        "checkedAt": "2026-10-27T15:04:37.219Z"
+      },
+      "checkedAt": "2026-10-27T15:16:29.967Z"
+    },
+    {
+      "product": "reloop",
+      "repository": "code-up-matrix/reloop-devpost-2026",
+      "repositoryCommit": "7b3147f6a7a4c9ba642c2465f3de157460d80a48",
+      "projectId": "prj_gcSQ2r7GGh8iOgrXRawHNacUx6Kj",
+      "teamId": "team_64IDAvx3sgtTRCQpQavfF3cG",
+      "deploymentId": "dpl_GkcGaGAmFtbLDbtvmPdLY3QZMS7E",
+      "deploymentUrl": "https://reloop-devpost-2026-astjcuqub-emmanuel-dukes-projects.vercel.app",
+      "url": "https://reloop-devpost-2026.vercel.app",
+      "target": "production",
+      "state": "READY",
+      "cloudDeployed": true,
+      "productionReady": false,
+      "databaseProvisioned": false,
+      "liveIntegrationVerified": false,
+      "submitted": false,
+      "configuredKeys": [
+        "SESSION_SECRET",
+        "OPERATOR_ACCESS_CODE",
+        "JUDGE_ACCESS_CODE",
+        "CRON_SECRET",
+        "APP_ORIGIN"
+      ],
+      "health": {
+        "url": "https://reloop-devpost-2026.vercel.app/api/health",
+        "status": 200,
+        "body": {
+          "application": "ReLoop",
+          "status": "configuration_required",
+          "missing": [
+            "DATABASE_URL"
+          ],
+          "version": "1.0.0"
+        },
+        "checkedAt": "2026-10-27T15:04:17.635Z"
+      },
+      "checkedAt": "2026-10-27T15:16:29.967Z"
+    },
+    {
+      "product": "lessonscript",
+      "repository": "code-up-matrix/lessonscript-devpost-2026",
+      "repositoryCommit": "2a677681fefb5216f56e1e5180065c5ca78c06c4",
+      "projectId": "prj_1BTqgsZAENzd2vl9GhuY0OdfBcrb",
+      "teamId": "team_64IDAvx3sgtTRCQpQavfF3cG",
+      "deploymentId": "dpl_4ySNVVVby2a1SzxUTWgUrb3nzan5",
+      "deploymentUrl": "https://lessonscript-devpost-2026-9rxr0n2na-emmanuel-dukes-projects.vercel.app",
+      "url": "https://lessonscript-devpost-2026.vercel.app",
+      "target": "production",
+      "state": "READY",
+      "cloudDeployed": true,
+      "productionReady": false,
+      "databaseProvisioned": false,
+      "liveIntegrationVerified": false,
+      "submitted": false,
+      "configuredKeys": [
+        "SESSION_SECRET",
+        "OPERATOR_ACCESS_CODE",
+        "JUDGE_ACCESS_CODE",
+        "CRON_SECRET",
+        "APP_ORIGIN"
+      ],
+      "health": {
+        "url": "https://lessonscript-devpost-2026.vercel.app/api/health",
+        "status": 200,
+        "body": {
+          "application": "LessonScript",
+          "status": "configuration_required",
+          "missing": [
+            "DATABASE_URL"
+          ],
+          "version": "1.0.0"
+        },
+        "checkedAt": "2026-10-27T15:04:26.543Z"
+      },
+      "checkedAt": "2026-10-27T15:16:29.967Z"
+    },
+    {
+      "product": "rhythmweave",
+      "repository": "code-up-matrix/rhythmweave-devpost-2026",
+      "repositoryCommit": "df252d8bc55b7f7226b913868c252b849adc80db",
+      "projectId": "prj_jG1CcZmsQr5eVHIX4w8704rZxAly",
+      "teamId": "team_64IDAvx3sgtTRCQpQavfF3cG",
+      "deploymentId": "dpl_65GZ4WNxdtNHFTvr9bMhsGuNeDhM",
+      "deploymentUrl": "https://rhythmweave-devpost-2026-db0i3360a-emmanuel-dukes-projects.vercel.app",
+      "url": "https://rhythmweave-devpost-2026.vercel.app",
+      "target": "production",
+      "state": "READY",
+      "cloudDeployed": true,
+      "productionReady": false,
+      "databaseProvisioned": false,
+      "liveIntegrationVerified": false,
+      "submitted": false,
+      "configuredKeys": [
+        "SESSION_SECRET",
+        "OPERATOR_ACCESS_CODE",
+        "JUDGE_ACCESS_CODE",
+        "CRON_SECRET",
+        "APP_ORIGIN"
+      ],
+      "health": {
+        "url": "https://rhythmweave-devpost-2026.vercel.app/api/health",
+        "status": 200,
+        "body": {
+          "application": "RhythmWeave",
+          "status": "configuration_required",
+          "missing": [
+            "DATABASE_URL"
+          ],
+          "version": "1.0.0"
+        },
+        "checkedAt": "2026-10-27T15:04:56.124Z"
+      },
+      "checkedAt": "2026-10-27T15:16:29.967Z"
+    }
+  ]
+}

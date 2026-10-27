@@ -2,7 +2,7 @@
 
 ## Published repositories
 
-Eight separate public repositories were created under `code-up-matrix` and populated from the independently checked source archives. All eight `main` heads, Git tree identifiers and complete file lists were read back through GitHub and matched the publication records: 343 files in total. [Repository links and remaining requirements](DEVPOST-REPOSITORIES.md) and [exact commit/tree records](../deploy/published-repositories.json) are available. Publication changed repository/status documentation only; application code, dependencies and test configuration are unchanged from the checked archives. No deployment or submission is implied by publication.
+Eight separate public repositories were created under `code-up-matrix` and populated from the independently checked source archives. All eight `main` heads, Git tree identifiers and complete file lists were read back through GitHub and matched the publication records: 343 files in total. [Repository links and remaining requirements](DEVPOST-REPOSITORIES.md) and [exact commit/tree records](../deploy/published-repositories.json) are available. The initial publication changed repository/status documentation only. A later CultureRoute health-check fix now uses the official Vercel OIDC helper and passed its TypeScript check, five tests, Eve build and Next build. No deployment or submission is implied by publication.
 
 ## Independent project verification
 
@@ -36,8 +36,8 @@ The React review checked stable keys, effect cleanup, labeled inputs, visible er
 
 ## Still unverified
 
-Vercel deployment, Neon provisioning/migration, live Nebius/Qloo/YouCam calls, actual Twitch OAuth/subscription/votes, real Eve agent execution, deployed ownership controls, cloud cron execution, browser behavior, backup restoration, NAS installation/runtime, required videos and final submissions.
+Neon provisioning/migration, live Nebius/Qloo/YouCam calls, actual Twitch OAuth/subscription/votes, real Eve agent execution, deployed database ownership controls, cloud cron execution, backup restoration, NAS installation/runtime, required videos and final submissions. Hosting, health endpoints and selected browser interactions are verified in [DEVPOST-HOSTING.md](DEVPOST-HOSTING.md).
 
 The local Eve build emitted a warning that no Docker/Vercel sandbox provider was available. Default tools are disabled and the authored integrations do not depend on that local sandbox; nevertheless, a completed build is not runtime proof. No fake runtime success was used to clear a gate.
 
-Vercel still returned 403 for the intended team after repository publication. GitHub creation and publication are complete; the remaining access step is Vercel's team-consent grant, followed by each provider's required credentials and live verification.
+Vercel team authorization and seven deployments are complete. The existing Neon integration does not expose database creation through the current Vercel tools. The Neon plugin was offered and is not yet connected; database provisioning and required sponsor credentials remain pending.

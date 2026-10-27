@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-10-27T15:17:55.891Z",
+  "checks": [
+    {
+      "product": "crowdquest",
+      "url": "https://crowdquest-devpost-2026.vercel.app/",
+      "status": 200,
+      "title": "CrowdQuest",
+      "method": "Public GET without credentials"
+    },
+    {
+      "product": "fitreceipt",
+      "url": "https://fitreceipt-devpost-2026.vercel.app/",
+      "status": 200,
+      "title": "FitReceipt",
+      "method": "Public GET without credentials"
+    },
+    {
+      "product": "reloop",
+      "url": "https://reloop-devpost-2026.vercel.app/",
+      "status": 200,
+      "title": "ReLoop",
+      "method": "Public GET without credentials"
+    }
+  ]
+}
